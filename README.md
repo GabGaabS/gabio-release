@@ -5,8 +5,6 @@ Ce dépôt public distribue uniquement les versions Windows signées de Gabio. L
 Les fichiers utiles se trouvent dans l’onglet **Releases** :
 
 - `Gabio-Setup-x.y.z.exe` : installateur Windows ;
-- `Gabio-Setup-x.y.z.exe.blockmap` : téléchargement différentiel ;
-- `latest.yml` : manifeste lu par le système de mise à jour intégré.
 
 Gabio vérifie automatiquement la dernière release, mais demande toujours confirmation avant le téléchargement et avant l’installation.
 
