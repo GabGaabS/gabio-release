@@ -14,4 +14,4 @@ Chaque release doit inclure les empreintes SHA-256 de ses fichiers dans ses note
 
 ## Publication
 
-Ce dépôt ne reçoit pas les sources ni les fichiers de travail. Une release est publiée seulement après validation du build sur la branche 2.x, puis après validation finale sur la branche 3.x.
+Ce dépôt ne reçoit pas les sources ni les fichiers de travail. 
