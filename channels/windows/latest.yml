@@ -1,12 +1,12 @@
-version: 3.1.1
+version: 3.1.2
 files:
   - url: >-
-      https://github.com/GabGaabS/gabio-release/releases/download/v3.1.1/Gabio-Setup-3.1.1.exe
+      https://github.com/GabGaabS/gabio-release/releases/download/v3.1.2/Gabio-Setup-3.1.2.exe
     sha512: >-
-      55INDBmMvHUvwUApsSagIbl/ZkI37BrgKwuCxJJlg0sT5RyKLGdPlJyj6PbUKF/IOf5rAxjvxYVHvPbKc76kWg==
-    size: 208422493
+      uZ4FX5VH2liNe1vfSZqb1bLHjuDsYfdzm5FJxYcrFthM/8PJjO776vbRoyMPS2xHm5Jo1camacTKV8SmtwrV6Q==
+    size: 208423145
 path: >-
-  https://github.com/GabGaabS/gabio-release/releases/download/v3.1.1/Gabio-Setup-3.1.1.exe
+  https://github.com/GabGaabS/gabio-release/releases/download/v3.1.2/Gabio-Setup-3.1.2.exe
 sha512: >-
-  55INDBmMvHUvwUApsSagIbl/ZkI37BrgKwuCxJJlg0sT5RyKLGdPlJyj6PbUKF/IOf5rAxjvxYVHvPbKc76kWg==
-releaseDate: '2026-10-04T11:36:00.129Z'
+  uZ4FX5VH2liNe1vfSZqb1bLHjuDsYfdzm5FJxYcrFthM/8PJjO776vbRoyMPS2xHm5Jo1camacTKV8SmtwrV6Q==
+releaseDate: '2026-10-04T13:10:37.566Z'
