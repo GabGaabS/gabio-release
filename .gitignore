@@ -1,3 +1,8 @@
 *
 !.gitignore
 !README.md
+!.github/
+!.github/workflows/
+!.github/workflows/apple-free.yml
+!.github/scripts/
+!.github/scripts/apple-draft.mjs

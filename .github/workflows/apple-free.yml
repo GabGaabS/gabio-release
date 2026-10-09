@@ -1,0 +1,69 @@
+# Public orchestration only. App sources and build output never enter public logs.
+name: Apple internal build
+on:
+  workflow_dispatch:
+    inputs:
+      source_sha:
+        description: Reviewed private source commit (40 hexadecimal characters)
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: apple-internal-build
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.repository == 'GabGaabS/gabio-release' && github.ref == 'refs/heads/main' && github.actor == 'GabGaabS' && github.event_name == 'workflow_dispatch'
+    runs-on: macos-15
+    timeout-minutes: 45
+    permissions:
+      contents: write # Draft only; this workflow never publishes a release.
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - name: Fetch reviewed sources privately
+        env:
+          SOURCE_SHA: ${{ inputs.source_sha }}
+          SOURCE_KEY: ${{ secrets.GABIO_APPLE_SOURCE_READ_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$SOURCE_SHA" =~ ^[0-9a-f]{40}$ ]]
+          umask 077
+          mkdir -p "$RUNNER_TEMP/gabio-validation"
+          {
+            node --input-type=module -e 'const response=await fetch("https://api.github.com/meta");if(!response.ok)throw Error("SSH trust unavailable");const body=await response.json();if(!body.ssh_keys?.length)throw Error("No trusted SSH keys");process.stdout.write(body.ssh_keys.map(key=>"github.com "+key).join("\n")+"\n");' > "$RUNNER_TEMP/gabio-hosts"
+            printf '%s\n' "$SOURCE_KEY" > "$RUNNER_TEMP/gabio-source-key"
+            unset SOURCE_KEY
+            trap 'rm -f "$RUNNER_TEMP/gabio-source-key"' EXIT
+            export GIT_SSH_COMMAND="ssh -i $RUNNER_TEMP/gabio-source-key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$RUNNER_TEMP/gabio-hosts"
+            git init "$RUNNER_TEMP/gabio-source"
+            git -C "$RUNNER_TEMP/gabio-source" remote add origin git@github.com:GabGaabS/gabio.git
+            git -C "$RUNNER_TEMP/gabio-source" fetch --depth=1 origin "$SOURCE_SHA"
+            git -C "$RUNNER_TEMP/gabio-source" checkout --detach FETCH_HEAD
+            [[ "$(git -C "$RUNNER_TEMP/gabio-source" rev-parse HEAD)" = "$SOURCE_SHA" ]]
+          } > "$RUNNER_TEMP/gabio-private-build.log" 2>&1 || { echo 'Private source preparation failed; details will be encrypted.'; exit 1; }
+      - name: Build and validate privately
+        id: validation
+        env:
+          GABIO_VALIDATION_DIR: ${{ runner.temp }}/gabio-validation
+        shell: bash
+        run: |
+          if bash "$RUNNER_TEMP/gabio-source/gabio-apple/scripts/free-runner-build.sh" >> "$RUNNER_TEMP/gabio-private-build.log" 2>&1; then
+            echo 'Application build and simulator checks succeeded.'
+          else
+            echo 'Private validation failed; details will be encrypted.'
+            exit 1
+          fi
+      - name: Save an unpublished internal draft
+        if: always() && !cancelled()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ inputs.source_sha }}
+          DIAGNOSTIC_PUBLIC_KEY: ${{ secrets.GABIO_APPLE_DIAGNOSTIC_PUBLIC_KEY }}
+        run: node .github/scripts/apple-draft.mjs
