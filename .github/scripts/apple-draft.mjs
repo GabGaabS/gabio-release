@@ -43,6 +43,7 @@ export function validateAssets(assets, hasIPA) {
   for (const a of assets) assert.ok(Number.isSafeInteger(a.size) && a.size > 0 && a.size <= 536_870_912);
 }
 async function exists(file) { try { await access(file); return true; } catch { return false; } }
+let phase = 'checks';
 async function main() {
   const env = process.env, tag = destination(env);
   assert.ok(env.GH_TOKEN && env.DIAGNOSTIC_PUBLIC_KEY && env.RUNNER_TEMP);
@@ -68,20 +69,26 @@ async function main() {
   const passed = await exists(path.join(validation, 'ui-passed'));
   const body = `INTERNAL DRAFT — DO NOT PUBLISH.\n\nBuild for personal device testing only. Universal iPhone/iPad IPA: ${hasIPA ? 'compiled and archive verified' : 'not available'}. Simulator UI checks: ${passed ? 'passed' : 'not passed'}. No physical device test yet. Parity incomplete.\n\nDiagnostics are authenticated ciphertext readable only with the locally retained key. No application source archive or plaintext build log. This workflow never publishes this draft or changes Latest.\n`;
   const notes = path.join(out, 'notes.md'); await writeFile(notes, body);
-  // Every run has a fresh draft; never overwrite a published or existing asset.
-  gh(['release', 'create', tag, '--repo', repo, '--target', env.GITHUB_SHA, '--draft', '--prerelease', '--latest=false', '--title', 'INTERNAL Apple test — DO NOT PUBLISH', '--notes-file', notes]);
-  // An unpublished draft has no Git tag yet: releases/tags/<tag> returns 404.
-  let draft = api('releases?per_page=100').find(release => release.tag_name === tag);
-  assert.ok(draft && Number.isSafeInteger(draft.id));
+  // Use release/asset IDs throughout: an unpublished draft has no Git tag.
+  phase = 'create-draft';
+  const input = path.join(out, 'draft-input.json');
+  await writeFile(input, JSON.stringify({tag_name:tag,target_commitish:env.GITHUB_SHA,draft:true,prerelease:true,make_latest:'false',name:'INTERNAL Apple test — DO NOT PUBLISH',body}));
+  let draft = JSON.parse(gh(['api',`repos/${repo}/releases`,'--method','POST','--input',input]));
+  assert.ok(Number.isSafeInteger(draft.id));
   assert.equal(draft.draft, true); assert.equal(draft.prerelease, true); assert.equal(draft.assets.length, 0);
-  assert.equal(draft.body.trim(), body.trim());
-  gh(['release', 'upload', tag, '--repo', repo, ...files]);
+  assert.equal(draft.body.replaceAll('\r\n','\n').trim(), body.trim());
+  phase = 'upload-assets';
+  for (const file of files) gh(['api',`https://uploads.github.com/repos/${repo}/releases/${draft.id}/assets?name=${encodeURIComponent(path.basename(file))}`,'--method','POST','--header','Content-Type: application/octet-stream','--input',file]);
+  phase = 'verify-draft';
   draft = api(`releases/${draft.id}`); assert.equal(draft.draft, true); assert.equal(draft.prerelease, true); validateAssets(draft.assets, hasIPA);
   const inspection = path.join(out, 'inspection'); await mkdir(inspection);
-  gh(['release', 'download', tag, '--repo', repo, '--dir', inspection]);
-  for (const file of files) assert.deepEqual(await readFile(path.join(inspection, path.basename(file))), await readFile(file));
+  for (const file of files) {
+    const asset = draft.assets.find(a => a.name === path.basename(file)); assert.ok(Number.isSafeInteger(asset?.id));
+    const downloaded = execFileSync('gh',['api',`repos/${repo}/releases/assets/${asset.id}`,'--header','Accept: application/octet-stream'],{maxBuffer:536_870_912,stdio:['ignore','pipe','pipe']});
+    await writeFile(path.join(inspection,path.basename(file)),downloaded); assert.deepEqual(downloaded,await readFile(file));
+  }
   console.log(`Unpublished internal draft retained; IPA verified: ${hasIPA}; simulator checks passed: ${passed}.`);
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  try { await main(); } catch { console.error('Internal draft transfer failed. No release was published.'); process.exitCode = 1; }
+  try { await main(); } catch (error) { console.error(`Internal draft transfer failed during ${phase} (${error.name}; HTTP ${String(error.stderr ?? '').match(/HTTP (\d{3})/)?.[1] ?? 'unknown'}). No release was published.`); process.exitCode = 1; }
 }
