@@ -20,15 +20,23 @@ on:
         required: false
         default: false
         type: boolean
+      runner_arch:
+        description: Standard free Mac architecture
+        required: false
+        default: arm64
+        type: choice
+        options:
+          - arm64
+          - x64
 permissions:
   contents: read
 concurrency:
-  group: apple-internal-build-${{ inputs.platform || 'ios' }}
+  group: apple-internal-build-${{ inputs.platform || 'ios' }}-${{ inputs.runner_arch || 'arm64' }}
   cancel-in-progress: false
 jobs:
   build:
     if: github.repository == 'GabGaabS/gabio-release' && github.ref == 'refs/heads/main' && github.actor == 'GabGaabS' && github.event_name == 'workflow_dispatch'
-    runs-on: macos-15
+    runs-on: ${{ inputs.runner_arch == 'x64' && 'macos-15-intel' || 'macos-15' }}
     timeout-minutes: 45
     permissions:
       contents: write # Draft only; this workflow never publishes a release.
