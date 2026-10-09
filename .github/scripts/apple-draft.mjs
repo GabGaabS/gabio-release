@@ -67,7 +67,8 @@ async function main() {
     files.push(ipa, sums);
   }
   const passed = await exists(path.join(validation, 'ui-passed'));
-  const body = `INTERNAL DRAFT — DO NOT PUBLISH.\n\nBuild for personal device testing only. Universal iPhone/iPad IPA: ${hasIPA ? 'compiled and archive verified' : 'not available'}. Simulator UI checks: ${passed ? 'passed' : 'not passed'}. No physical device test yet. Parity incomplete.\n\nDiagnostics are authenticated ciphertext readable only with the locally retained key. No application source archive or plaintext build log. This workflow never publishes this draft or changes Latest.\n`;
+  const macPassed = await exists(path.join(validation, 'mac-passed'));
+  const body = `INTERNAL DRAFT — DO NOT PUBLISH.\n\nBuild for personal device testing only. Universal iPhone/iPad IPA: ${hasIPA ? 'compiled and archive verified' : 'not available'}. Simulator UI checks: ${passed ? 'passed' : 'not passed'}. Isolated macOS validation: ${macPassed ? 'passed' : 'not passed'}. No physical device test yet. Parity incomplete.\n\nDiagnostics are authenticated ciphertext readable only with the locally retained key. No application source archive or plaintext build log. This workflow never publishes this draft or changes Latest.\n`;
   const notes = path.join(out, 'notes.md'); await writeFile(notes, body);
   // Use release/asset IDs throughout: an unpublished draft has no Git tag.
   phase = 'create-draft';
