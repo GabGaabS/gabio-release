@@ -37,8 +37,9 @@ jobs:
           umask 077
           mkdir -p "$RUNNER_TEMP/gabio-validation"
           {
-            node --input-type=module -e 'const response=await fetch("https://api.github.com/meta");if(!response.ok)throw Error("SSH trust unavailable");const body=await response.json();if(!body.ssh_keys?.length)throw Error("No trusted SSH keys");process.stdout.write(body.ssh_keys.map(key=>"github.com "+key).join("\n")+"\n");' > "$RUNNER_TEMP/gabio-hosts"
-            printf '%s\n' "$SOURCE_KEY" > "$RUNNER_TEMP/gabio-source-key"
+            # Official GitHub Ed25519 host key, verified against /meta.
+            printf '%s\n' 'github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl' > "$RUNNER_TEMP/gabio-hosts"
+            printf '%s\n' "$SOURCE_KEY" | tr -d '\r' > "$RUNNER_TEMP/gabio-source-key"
             unset SOURCE_KEY
             trap 'rm -f "$RUNNER_TEMP/gabio-source-key"' EXIT
             export GIT_SSH_COMMAND="ssh -i $RUNNER_TEMP/gabio-source-key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$RUNNER_TEMP/gabio-hosts"

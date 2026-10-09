@@ -70,11 +70,13 @@ async function main() {
   const notes = path.join(out, 'notes.md'); await writeFile(notes, body);
   // Every run has a fresh draft; never overwrite a published or existing asset.
   gh(['release', 'create', tag, '--repo', repo, '--target', env.GITHUB_SHA, '--draft', '--prerelease', '--latest=false', '--title', 'INTERNAL Apple test — DO NOT PUBLISH', '--notes-file', notes]);
-  let draft = api(`releases/tags/${tag}`);
+  // An unpublished draft has no Git tag yet: releases/tags/<tag> returns 404.
+  let draft = api('releases?per_page=100').find(release => release.tag_name === tag);
+  assert.ok(draft && Number.isSafeInteger(draft.id));
   assert.equal(draft.draft, true); assert.equal(draft.prerelease, true); assert.equal(draft.assets.length, 0);
   assert.equal(draft.body.trim(), body.trim());
   gh(['release', 'upload', tag, '--repo', repo, ...files]);
-  draft = api(`releases/tags/${tag}`); assert.equal(draft.draft, true); assert.equal(draft.prerelease, true); validateAssets(draft.assets, hasIPA);
+  draft = api(`releases/${draft.id}`); assert.equal(draft.draft, true); assert.equal(draft.prerelease, true); validateAssets(draft.assets, hasIPA);
   const inspection = path.join(out, 'inspection'); await mkdir(inspection);
   gh(['release', 'download', tag, '--repo', repo, '--dir', inspection]);
   for (const file of files) assert.deepEqual(await readFile(path.join(inspection, path.basename(file))), await readFile(file));
