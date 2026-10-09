@@ -23,7 +23,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: apple-internal-build
+  group: apple-internal-build-${{ inputs.platform || 'ios' }}
   cancel-in-progress: false
 jobs:
   build:
@@ -81,9 +81,18 @@ jobs:
             exit 1
           fi
       - name: Save an unpublished internal draft
+        id: delivery
         if: always() && !cancelled()
         env:
           GH_TOKEN: ${{ github.token }}
           SOURCE_SHA: ${{ inputs.source_sha }}
           DIAGNOSTIC_PUBLIC_KEY: ${{ secrets.GABIO_APPLE_DIAGNOSTIC_PUBLIC_KEY }}
         run: node .github/scripts/apple-draft.mjs
+      - name: Keep only the encrypted diagnostic if draft delivery fails
+        if: always() && !cancelled() && steps.delivery.outcome == 'failure'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: encrypted-Apple-diagnostic
+          path: ${{ runner.temp }}/gabio-delivery/apple-diagnostic.enc
+          if-no-files-found: error
+          retention-days: 7

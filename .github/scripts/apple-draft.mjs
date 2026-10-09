@@ -91,5 +91,9 @@ async function main() {
   console.log(`Unpublished internal draft retained; IPA verified: ${hasIPA}; simulator checks passed: ${passed}.`);
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  try { await main(); } catch (error) { console.error(`Internal draft transfer failed during ${phase} (${error.name}; HTTP ${String(error.stderr ?? '').match(/HTTP (\d{3})/)?.[1] ?? 'unknown'}). No release was published.`); process.exitCode = 1; }
+  try { await main(); } catch (error) {
+    const stderr = String(error.stderr ?? '');
+    const reason = /secondary rate limit/i.test(stderr) ? 'secondary rate limit' : /API rate limit/i.test(stderr) ? 'API rate limit' : /Resource not accessible by integration/i.test(stderr) ? 'token permission' : /abuse/i.test(stderr) ? 'content creation limit' : 'unspecified';
+    console.error(`Internal draft transfer failed during ${phase} (${error.name}; HTTP ${stderr.match(/HTTP (\d{3})/)?.[1] ?? 'unknown'}; ${reason}). No release was published.`); process.exitCode = 1;
+  }
 }
