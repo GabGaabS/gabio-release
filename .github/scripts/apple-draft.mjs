@@ -7,6 +7,7 @@ import { execFileSync } from 'node:child_process';
 import crypto from 'node:crypto';
 
 const ipaName = 'Gabio-iOS-0.1.0-unsigned.ipa';
+const macNames = ['Gabio-macOS-0.1.0-arm64.zip', 'Gabio-macOS-0.1.0-x64.zip'];
 const diagnosticName = 'apple-diagnostic.enc';
 const sumsName = 'SHA256SUMS-Apple.txt';
 export function destination(env) {
@@ -38,8 +39,10 @@ export function openDiagnostic(envelope, privateKey) {
     return Buffer.concat([decipher.update(Buffer.from(e.data, 'base64')), decipher.final()]);
   } finally { key.fill(0); }
 }
-export function validateAssets(assets, hasIPA) {
-  assert.deepEqual(assets.map(a => a.name).sort(), (hasIPA ? [diagnosticName, ipaName, sumsName] : [diagnosticName]).sort());
+export function validateAssets(assets, hasIPA, hasMac = false) {
+  assert.ok(!(hasIPA && hasMac));
+  const binaries = hasIPA ? [ipaName] : hasMac ? macNames : [];
+  assert.deepEqual(assets.map(a => a.name).sort(), [diagnosticName, ...binaries, ...(binaries.length ? [sumsName] : [])].sort());
   for (const a of assets) assert.ok(Number.isSafeInteger(a.size) && a.size > 0 && a.size <= 536_870_912);
 }
 async function exists(file) { try { await access(file); return true; } catch { return false; } }
@@ -56,6 +59,8 @@ async function main() {
   await writeFile(diagnostic, sealDiagnostic(await exists(log) ? await readFile(log) : Buffer.from('Preparation did not start.'), env.DIAGNOSTIC_PUBLIC_KEY));
   const validation = path.join(env.RUNNER_TEMP, 'gabio-validation');
   const marker = path.join(validation, 'ipa-verified.json'), hasIPA = await exists(marker);
+  const macMarker = path.join(validation, 'mac-verified.json'), hasMac = await exists(macMarker);
+  assert.ok(!(hasIPA && hasMac));
   const files = [diagnostic];
   if (hasIPA) {
     const verified = JSON.parse(await readFile(marker, 'utf8'));
@@ -66,9 +71,24 @@ async function main() {
     const sums = path.join(out, sumsName); await writeFile(sums, `${verified.sha256}  ${ipaName}\n`);
     files.push(ipa, sums);
   }
+  if (hasMac) {
+    assert.ok(await exists(path.join(validation, 'mac-passed')));
+    const manifest = JSON.parse(await readFile(macMarker, 'utf8'));
+    assert.deepEqual(manifest.map(item => item.name).sort(), [...macNames].sort());
+    const sums = path.join(out, sumsName), lines = [];
+    for (const verified of manifest) {
+      assert.ok(Number.isSafeInteger(verified.size) && verified.size > 0 && verified.size <= 536_870_912);
+      assert.match(verified.sha256, /^[0-9a-f]{64}$/);
+      const file = path.join(env.RUNNER_TEMP, 'gabio-source', 'gabio-apple', 'dist', verified.name);
+      assert.equal((await stat(file)).size, verified.size);
+      assert.equal(crypto.createHash('sha256').update(await readFile(file)).digest('hex'), verified.sha256);
+      files.push(file); lines.push(`${verified.sha256}  ${verified.name}\n`);
+    }
+    await writeFile(sums, lines.join('')); files.push(sums);
+  }
   const passed = await exists(path.join(validation, 'ui-passed'));
   const macPassed = await exists(path.join(validation, 'mac-passed'));
-  const body = `INTERNAL DRAFT — DO NOT PUBLISH.\n\nBuild for personal device testing only. Universal iPhone/iPad IPA: ${hasIPA ? 'compiled and archive verified' : 'not available'}. Simulator UI checks: ${passed ? 'passed' : 'not passed'}. Isolated macOS validation: ${macPassed ? 'passed' : 'not passed'}. No physical device test yet. Parity incomplete.\n\nDiagnostics are authenticated ciphertext readable only with the locally retained key. No application source archive or plaintext build log. This workflow never publishes this draft or changes Latest.\n`;
+  const body = `INTERNAL DRAFT — DO NOT PUBLISH.\n\nBuild for personal device testing only. Universal iPhone/iPad IPA: ${hasIPA ? 'compiled and archive verified' : 'not available'}. Simulator UI checks: ${passed ? 'passed' : 'not passed'}. Isolated macOS validation: ${macPassed ? 'passed' : 'not passed'}. Mac packages: ${hasMac ? 'compiled, tested and archive verified' : 'not transferred'}. No physical device test yet. Parity incomplete.\n\nDiagnostics are authenticated ciphertext readable only with the locally retained key. No application source archive or plaintext build log. This workflow never publishes this draft or changes Latest.\n`;
   const notes = path.join(out, 'notes.md'); await writeFile(notes, body);
   // Use release/asset IDs throughout: an unpublished draft has no Git tag.
   phase = 'create-draft';
@@ -83,7 +103,7 @@ async function main() {
   phase = 'upload-assets';
   for (const file of files) gh(['api',`https://uploads.github.com/repos/${repo}/releases/${draft.id}/assets?name=${encodeURIComponent(path.basename(file))}`,'--method','POST','--header','Content-Type: application/octet-stream','--input',file]);
   phase = 'verify-draft';
-  draft = api(`releases/${draft.id}`); assert.equal(draft.draft, true); assert.equal(draft.prerelease, true); validateAssets(draft.assets, hasIPA);
+  draft = api(`releases/${draft.id}`); assert.equal(draft.draft, true); assert.equal(draft.prerelease, true); validateAssets(draft.assets, hasIPA, hasMac);
   const inspection = path.join(out, 'inspection'); await mkdir(inspection);
   for (const file of files) {
     const asset = draft.assets.find(a => a.name === path.basename(file)); assert.ok(Number.isSafeInteger(asset?.id));
