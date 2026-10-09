@@ -7,6 +7,14 @@ on:
         description: Reviewed private source commit (40 hexadecimal characters)
         required: true
         type: string
+      platform:
+        description: Platform to validate with isolated fixtures
+        required: true
+        default: ios
+        type: choice
+        options:
+          - ios
+          - mac
       diagnostic_probe:
         description: Test encrypted diagnostic delivery without compiling
         required: false
@@ -60,13 +68,14 @@ jobs:
         env:
           GABIO_VALIDATION_DIR: ${{ runner.temp }}/gabio-validation
           DIAGNOSTIC_PROBE: ${{ inputs.diagnostic_probe }}
+          GABIO_VALIDATION_PLATFORM: ${{ inputs.platform }}
         shell: bash
         run: |
           if [[ "$DIAGNOSTIC_PROBE" = true ]]; then
             mkdir -p "$GABIO_VALIDATION_DIR"
             printf '%s\n' 'Safe synthetic diagnostic; no application or user data.' > "$RUNNER_TEMP/gabio-private-build.log"
           elif bash "$RUNNER_TEMP/gabio-source/gabio-apple/scripts/free-runner-build.sh" >> "$RUNNER_TEMP/gabio-private-build.log" 2>&1; then
-            echo 'Application build and simulator checks succeeded.'
+            echo 'Application build and isolated validation checks succeeded.'
           else
             echo 'Private validation failed; details will be encrypted.'
             exit 1
