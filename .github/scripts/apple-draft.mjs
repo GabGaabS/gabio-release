@@ -73,7 +73,9 @@ async function main() {
   // Use release/asset IDs throughout: an unpublished draft has no Git tag.
   phase = 'create-draft';
   const input = path.join(out, 'draft-input.json');
-  await writeFile(input, JSON.stringify({tag_name:tag,target_commitish:env.GITHUB_SHA,draft:true,prerelease:true,make_latest:'false',name:'INTERNAL Apple test — DO NOT PUBLISH',body}));
+  // The public default-branch ref avoids extra workflow permissions when that
+  // branch advances during a long build. This draft never publishes a tag.
+  await writeFile(input, JSON.stringify({tag_name:tag,target_commitish:'main',draft:true,prerelease:true,make_latest:'false',name:'INTERNAL Apple test — DO NOT PUBLISH',body}));
   let draft = JSON.parse(gh(['api',`repos/${repo}/releases`,'--method','POST','--input',input]));
   assert.ok(Number.isSafeInteger(draft.id));
   assert.equal(draft.draft, true); assert.equal(draft.prerelease, true); assert.equal(draft.assets.length, 0);
