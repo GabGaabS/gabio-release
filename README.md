@@ -67,6 +67,15 @@ stable et installez-le par-dessus Gabio. **Ne désinstallez pas Gabio** pour une
 simple mise à jour : bibliothèque, historique, réglages et fichiers conservés
 doivent être gardés. Le nouvel EXE peut présenter les mêmes alertes de signature.
 
+<details>
+<summary>Capture Gabio : les mises à jour sur Windows</summary>
+
+Interface française, capturée avec un profil de test sans données personnelles.
+
+<img src="assets/install/windows-updates.png" alt="Page des mises à jour de Gabio Windows" width="800">
+
+</details>
+
 ## Installer sur Android
 
 ### Première installation
@@ -98,6 +107,15 @@ Dans Gabio, ouvrez **Profil → Mises à jour** et choisissez **Voir la mise à 
 lorsqu’une nouvelle version est annoncée. Téléchargez son APK, ouvrez-le et
 confirmez **Mettre à jour / Installer** sur l’application existante. L’installation
 reste confirmée par Android ; Gabio n’installe pas silencieusement un APK.
+
+<details>
+<summary>Capture Gabio : les mises à jour dans le profil Android</summary>
+
+Interface française sur émulateur, avec un profil de test sans données personnelles.
+
+<img src="assets/install/android-updates.png" alt="Profil Gabio Android et état de la mise à jour" width="360">
+
+</details>
 
 Gardez le même canal officiel et ne désinstallez pas Gabio : le certificat
 historique permet de conserver vos données pendant la mise à jour. Si Android
@@ -293,6 +311,15 @@ et sa version dans **Explorer**. Les salons et la télécommande exigent Interne
 chaque appareil lit sa propre vidéo. Les fichiers conservés peuvent être lus
 hors connexion. Autorisez le réseau local si vous souhaitez utiliser une fonction
 réseau local proposée par Gabio.
+
+<details>
+<summary>Capture Gabio : les paramètres sur Mac</summary>
+
+Gabio 0.1.0, interface française sur le Mac de test de compilation.
+
+<img src="assets/install/mac-settings.png" alt="Paramètres Gabio Mac et apparence des sous-titres" width="800">
+
+</details>
 
 ## Alertes de sécurité et dépannage
 

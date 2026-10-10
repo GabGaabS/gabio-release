@@ -66,6 +66,15 @@ link and install over Gabio. **Do not uninstall Gabio** for a normal update:
 your library, history, settings and saved downloads should be kept. The new
 installer may show the same signing warnings.
 
+<details>
+<summary>Gabio screenshot: Windows updates</summary>
+
+French interface, captured using a test profile without personal data.
+
+<img src="assets/install/windows-updates.png" alt="Gabio Windows update settings" width="800">
+
+</details>
+
 ## Install on Android
 
 ### First installation
@@ -96,6 +105,15 @@ In Gabio, open **Profil → Mises à jour** (Profile → Updates), then **Voir l
 à jour** (View update) when offered. Download and open the new APK, then confirm
 **Update / Install** over the existing app. Android still requires installation
 confirmation; Gabio does not silently install APKs.
+
+<details>
+<summary>Gabio screenshot: updates in the Android profile</summary>
+
+French interface on an emulator, using a test profile without personal data.
+
+<img src="assets/install/android-updates.png" alt="Gabio Android profile and update status" width="360">
+
+</details>
 
 Keep the same official channel and do not uninstall Gabio. Its historical
 certificate lets normal updates retain your data. For a signature conflict or
@@ -279,6 +297,15 @@ Open **Réglages → Addons** (Settings → Addons), configure your sources and 
 a title/version in **Explorer**. Rooms and the remote require Internet; each
 device plays its own video. Saved files can be played offline. Grant local
 network permission when using a local-network feature offered by Gabio.
+
+<details>
+<summary>Gabio screenshot: settings on Mac</summary>
+
+Gabio 0.1.0, French interface on the Mac used to build and test the app.
+
+<img src="assets/install/mac-settings.png" alt="Gabio Mac settings and subtitle appearance" width="800">
+
+</details>
 
 ## Security alerts and troubleshooting
 
