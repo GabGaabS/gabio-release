@@ -37,7 +37,7 @@ jobs:
   build:
     if: github.repository == 'GabGaabS/gabio-release' && github.ref == 'refs/heads/main' && github.actor == 'GabGaabS' && github.event_name == 'workflow_dispatch'
     runs-on: ${{ inputs.runner_arch == 'x64' && 'macos-15-intel' || 'macos-15' }}
-    timeout-minutes: 45
+    timeout-minutes: 75
     permissions:
       contents: write # Draft only; this workflow never publishes a release.
     steps:
@@ -73,6 +73,7 @@ jobs:
           } > "$RUNNER_TEMP/gabio-private-build.log" 2>&1 || { echo 'Private source preparation failed; details will be encrypted.'; exit 1; }
       - name: Build and validate privately
         id: validation
+        timeout-minutes: 65
         env:
           GABIO_VALIDATION_DIR: ${{ runner.temp }}/gabio-validation
           DIAGNOSTIC_PROBE: ${{ inputs.diagnostic_probe }}
