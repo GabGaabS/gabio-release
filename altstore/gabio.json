@@ -1,0 +1,39 @@
+{
+  "name": "Gabio — bêta iPhone/iPad",
+  "subtitle": "Le même Gabio sur vos appareils.",
+  "description": "Source officielle Gabio pour AltStore Classic. Signature personnelle avec AltServer ; compte Apple gratuit accepté.",
+  "website": "https://github.com/GabGaabS/gabio-release#installer-sur-iphone-ou-ipad",
+  "iconURL": "https://raw.githubusercontent.com/GabGaabS/gabio-release/main/assets/gabio-ios.png",
+  "tintColor": "#A3EFDE",
+  "apps": [
+    {
+      "name": "Gabio",
+      "bundleIdentifier": "io.gabio.apple",
+      "developerName": "GabGaabS",
+      "subtitle": "Films, séries et séances ensemble.",
+      "localizedDescription": "Gabio pour iPhone et iPad : catalogues et addons configurables, lecteur VLC, reprise par épisode, vidéos conservées, bibliothèque, synchronisation, salles et télécommande. Bêta expérimentale ; voir le README pour les limites et le guide complet.",
+      "iconURL": "https://raw.githubusercontent.com/GabGaabS/gabio-release/main/assets/gabio-ios.png",
+      "tintColor": "#A3EFDE",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "buildVersion": "3",
+          "marketingVersion": "0.1.0 bêta (build 3)",
+          "date": "2026-10-10T22:36:24Z",
+          "localizedDescription": "Bêta universelle iPhone/iPad. Sources d’épisode accessibles directement, sous-titres intégrés lisibles et gestion des titres terminés. Mise à jour avec conservation des données.",
+          "downloadURL": "https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-iOS-0.1.0-unsigned.ipa",
+          "size": 27132327,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Gabio recherche les Chromecast que vous choisissez et leur transmet la vidéo sur votre Wi-Fi, puis échange les commandes avec vos appareils."
+        }
+      }
+    }
+  ],
+  "news": []
+}
