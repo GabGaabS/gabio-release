@@ -31,8 +31,8 @@ Un seul IPA convient à l’iPhone et à l’iPad, à partir d’iOS/iPadOS 17.0
 | Windows | [Dernière version stable](https://github.com/GabGaabS/gabio-release/releases/latest) : fichier `Gabio-Setup-…exe` | Ouvrir l’installateur ; conserver l’installation existante pour une mise à jour. Installateur actuellement non signé. |
 | Android | [Versions Android](https://github.com/GabGaabS/gabio-release/releases?q=android-v&expanded=true) : APK ARM64 pour la plupart des téléphones | Autoriser l’installation depuis le navigateur utilisé, puis installer par-dessus Gabio. Certificat historique conservé. |
 | iPhone / iPad | [IPA 0.1.0, build 3](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-iOS-0.1.0-unsigned.ipa) | [Guide AltStore](#installer-sur-iphone-ou-ipad) ; signature personnelle nécessaire. |
-| Mac Apple Silicon | [ZIP 0.1.0 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-macOS-0.1.0-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
-| Mac Intel | [ZIP 0.1.0 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-macOS-0.1.0-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
+| Mac Apple Silicon | [ZIP 1.0.0 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/Gabio-macOS-1.0.0-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
+| Mac Intel | [ZIP 1.0.0 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/Gabio-macOS-1.0.0-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 
 ## Choisir Français ou English
 
@@ -49,9 +49,14 @@ par les catalogues ne sont pas traduits par ce réglage.
 de Gabio → Français / English**. En anglais, le chemin est **Profile → Gabio
 language**. Le choix reste enregistré après fermeture et mise à jour.
 
-Apple conserve une interface française dans la version actuellement proposée
-ici. Sa prochaine version majeure bilingue est en cours de contrôle ; le lien
-IPA ci-dessus désigne la dernière version publiée.
+**Mac 1.0.0** propose Français / English : ouvrez **Paramètres → Langue de
+l’interface** (**Settings → Interface language** en anglais). Le choix reste
+enregistré après fermeture et mise à jour ; pendant la lecture, la vidéo,
+la position, les pistes, le volume et la calibration sont conservés.
+
+iPhone/iPad conserve une interface française avec **0.1.0/build3**. Sa prochaine
+version majeure bilingue est en cours de contrôle ; le lien IPA ci-dessus
+désigne la dernière version publiée.
 
 <details>
 <summary>Capture Gabio Windows 4.0 : choisir l’anglais</summary>
@@ -302,12 +307,16 @@ les téléchargements en gardant l'app ouverte.
 
 ## Installer sur Mac
 
+**Gabio Mac 1.0.0 — préversion** : [notes de version](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.0.0) ·
+[empreintes SHA-256 des deux ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/SHA256SUMS-macOS.txt).
+Cette version Mac est publiée séparément ; le dernier IPA reste 0.1.0/build3.
+
 ### 1. Choisir le bon téléchargement
 
 Dans **menu Apple  → À propos de ce Mac**, regardez le processeur :
 
-- Une **puce Apple M1, M2, M3, M4…** : [Gabio 0.1.0 Apple Silicon / ARM64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-macOS-0.1.0-arm64.zip).
-- Un **processeur Intel** : [Gabio 0.1.0 Intel / x64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-macOS-0.1.0-x64.zip).
+- Une **puce Apple M1, M2, M3, M4…** : [Gabio 1.0.0 Apple Silicon / ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/Gabio-macOS-1.0.0-arm64.zip).
+- Un **processeur Intel** : [Gabio 1.0.0 Intel / x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/Gabio-macOS-1.0.0-x64.zip).
 
 macOS **13 minimum**. Les ZIP Mac contiennent l’application Mac ; l’IPA sert
 uniquement aux iPhone et iPad. AltStore et un compte Apple ne sont pas nécessaires
@@ -334,7 +343,7 @@ concerne cette application. [Procédure officielle Apple](https://support.apple.
 </details>
 
 Si le message indique une archive/app endommagée, téléchargez de nouveau le ZIP
-et comparez son empreinte avec [SHA256SUMS-Apple.txt](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/SHA256SUMS-Apple.txt). Conservez le
+et comparez son empreinte avec [SHA256SUMS-macOS.txt](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/SHA256SUMS-macOS.txt). Conservez le
 message exact si le problème persiste ; ne modifiez pas les protections globales
 de macOS pour installer Gabio.
 
@@ -344,6 +353,10 @@ La mise à jour Mac est **manuelle** dans cette bêta. Revenez à ce README,
 téléchargez le nouveau ZIP de votre architecture, quittez Gabio, extrayez-le
 puis remplacez seulement **Gabio.app** dans Applications. Gardez vos données
 Gabio et vos fichiers conservés ; leur suppression n’est pas nécessaire.
+
+Le contrôle de mise à jour intégré consulte encore le canal Apple commun,
+qui conserve la référence iOS 0.1.0/build3. Ce canal n’annonce pas séparément
+cette préversion Mac 1.0.0 ; utilisez les liens Mac de ce README pour l’obtenir.
 
 ### 4. Démarrer
 
@@ -381,24 +394,30 @@ modifié demandent un examen distinct d’une simple alerte de réputation.
 
 ## Vérification et limites de la bêta Apple
 
-Le guide est disponible en français et en anglais. Windows 4.0.1 propose le
-choix Français / English décrit plus haut. Les versions Apple liées dans ce
-guide conservent une interface française ; la version bilingue est en cours
-de contrôle et n’est pas encore publiée.
+Le guide est disponible en français et en anglais. Windows 4.0.1, Android 2.0.1
+et Mac 1.0.0 proposent le choix Français / English. L’IPA actuellement publié
+reste iOS 0.1.0/build3 en français ; iOS 1.0.0 est encore en contrôle.
 
-L’iPad de test a validé mise à jour, design, films/épisodes et reprise, sous-titres
-intégrés, masquage des commandes, gestion de Ma liste, salle, télécommande et Sync.
-Les quinze scénarios passent sur chaque famille de simulateur. Les deux versions
-Mac passent les contrôles natifs de lecture, menus et hors connexion ; aucun
-iPhone ou Mac utilisateur n’a encore été essayé. L’ouverture après téléchargement
-sur un Mac utilisateur et l’ajout de la source AltStore restent à confirmer.
+Pour iOS 0.1.0/build3, l’iPad de test a validé mise à jour, design, films/épisodes
+et reprise, sous-titres intégrés, masquage des commandes, gestion de Ma liste,
+salle, télécommande et Sync. Ses quinze scénarios passent sur chaque famille
+de simulateur. Ces résultats historiques ne qualifient pas le candidat iOS 1.0.0.
 
-Les limites de PiP, diffusion TV, HDR/audio multicanal et transferts prolongés
-sont détaillées dans les [notes de la bêta](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v0.1.0). Les bibliothèques
-natives et leurs licences accompagnent les applications.
+Mac 1.0.0 passe les contrôles natifs sur deux hôtes Mac, Apple Silicon et Intel :
+lecture, menus, hors connexion, plein écran, réduction/restauration et retour
+au lecteur depuis une autre application. La position et les pistes sont
+conservées pendant ces parcours. L’ouverture du ZIP téléchargé via Gatekeeper
+sur un Mac utilisateur reste à confirmer ; ces essais ne couvrent pas tous
+les téléviseurs, codecs HDR/audio multicanal ou transferts prolongés.
+
+Les limites sont détaillées dans les [notes Mac 1.0.0](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.0.0) et les
+[notes iOS 0.1.0](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v0.1.0). Les bibliothèques natives
+et leurs licences accompagnent les applications.
 
 Téléchargez depuis ce dépôt public et comparez les
-[empreintes SHA-256 de la version Apple](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/SHA256SUMS-Apple.txt). Les canaux de mise à jour
-Windows et Android sont indépendants de la préversion Apple. Ce dépôt public
+[empreintes SHA-256 Mac 1.0.0](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/SHA256SUMS-macOS.txt) ou les
+[empreintes SHA-256 iOS 0.1.0](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/SHA256SUMS-Apple.txt).
+Les canaux Windows et Android, le canal Apple commun et la source AltStore
+sont conservés lors de cette publication Mac séparée. Ce dépôt public
 distribue les binaires, guides et métadonnées de téléchargement ; il ne reçoit
 ni les sources applicatives, ni les données ou diagnostics utilisateur.
