@@ -15,6 +15,15 @@ on:
         options:
           - ios
           - mac
+      ios_family:
+        description: iOS simulator family (every test runs on each selected family)
+        required: false
+        default: both
+        type: choice
+        options:
+          - both
+          - iphone
+          - ipad
       diagnostic_probe:
         description: Test encrypted diagnostic delivery without compiling
         required: false
@@ -31,7 +40,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: apple-internal-build-${{ inputs.platform || 'ios' }}-${{ inputs.runner_arch || 'arm64' }}
+  group: apple-internal-build-${{ inputs.platform || 'ios' }}-${{ inputs.runner_arch || 'arm64' }}-${{ (inputs.platform || 'ios') == 'ios' && inputs.ios_family || 'both' }}
   cancel-in-progress: false
 jobs:
   build:
@@ -78,8 +87,13 @@ jobs:
           GABIO_VALIDATION_DIR: ${{ runner.temp }}/gabio-validation
           DIAGNOSTIC_PROBE: ${{ inputs.diagnostic_probe }}
           GABIO_VALIDATION_PLATFORM: ${{ inputs.platform }}
+          GABIO_IOS_FAMILY: ${{ inputs.ios_family || 'both' }}
         shell: bash
         run: |
+          case "$GABIO_IOS_FAMILY" in
+            both|iphone|ipad) ;;
+            *) echo 'Unsupported iOS validation family.'; exit 1 ;;
+          esac
           if [[ "$DIAGNOSTIC_PROBE" = true ]]; then
             mkdir -p "$GABIO_VALIDATION_DIR"
             printf '%s\n' 'Safe synthetic diagnostic; no application or user data.' > "$RUNNER_TEMP/gabio-private-build.log"
