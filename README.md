@@ -45,9 +45,13 @@ addons et fichiers conservés restent disponibles ; les langues audio et
 sous-titres se règlent séparément. Les titres, résumés et noms de pistes fournis
 par les catalogues ne sont pas traduits par ce réglage.
 
-Android et Apple conservent leur interface française dans les versions
-actuellement proposées ici. Leur prochaine version majeure bilingue est en
-cours de contrôle ; le lien IPA ci-dessus désigne la dernière version publiée.
+**Android 2.0.0** propose aussi les deux langues : ouvrez **Profil → Langue
+de Gabio → Français / English**. En anglais, le chemin est **Profile → Gabio
+language**. Le choix reste enregistré après fermeture et mise à jour.
+
+Apple conserve une interface française dans la version actuellement proposée
+ici. Sa prochaine version majeure bilingue est en cours de contrôle ; le lien
+IPA ci-dessus désigne la dernière version publiée.
 
 <details>
 <summary>Capture Gabio Windows 4.0 : choisir l’anglais</summary>
@@ -56,6 +60,16 @@ Vraie interface Electron du build publié, avec un profil de test sans données
 personnelles. La sélection English est enregistrée et conservée au redémarrage.
 
 <img src="assets/install/windows-language-en.png" alt="Paramètres Gabio Windows avec le choix English" width="800">
+
+</details>
+
+<details>
+<summary>Capture Gabio Android 2.0 : le profil en anglais</summary>
+
+Vrai APK publié, sur un émulateur isolé avec police à 200 %. Le profil
+par défaut ne montre aucun compte ni historique personnel.
+
+<img src="assets/install/android-language-en.png" alt="Profil Gabio Android en anglais, police à 200 pour cent" width="360">
 
 </details>
 
@@ -130,7 +144,8 @@ les protections de l’appareil pour contourner un diagnostic inconnu.
 ### Mettre à jour sur Android
 
 Dans Gabio, ouvrez **Profil → Mises à jour** et choisissez **Voir la mise à jour**
-lorsqu’une nouvelle version est annoncée. Téléchargez son APK, ouvrez-le et
+lorsqu’une nouvelle version est annoncée. Si vous avez choisi l’anglais dans
+Android 2.0, les mêmes commandes sont **Profile → Updates → View update**. Téléchargez son APK, ouvrez-le et
 confirmez **Mettre à jour / Installer** sur l’application existante. L’installation
 reste confirmée par Android ; Gabio n’installe pas silencieusement un APK.
 

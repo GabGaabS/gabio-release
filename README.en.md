@@ -45,9 +45,13 @@ files are retained. Audio and subtitle languages have separate settings;
 catalogue titles, descriptions and track names keep the text provided by
 their source.
 
-The Android and Apple versions currently offered here retain their French
-interface. Their next bilingual major versions are being checked. The IPA
-link above always points to the latest published version.
+**Android 2.0.0** also supports both languages. Open **Profil → Langue de
+Gabio → Français / English** and select English. The English path is **Profile
+→ Gabio language**. The choice is retained after closing and updating the app.
+
+The Apple version currently offered here retains its French interface. Its
+next bilingual major version is being checked. The IPA link above always
+points to the latest published version.
 
 <details>
 <summary>Gabio Windows 4.0 screenshot: choosing English</summary>
@@ -56,6 +60,16 @@ Actual Electron interface from the published build, using a test profile
 without personal data. English is saved and retained after restarting.
 
 <img src="assets/install/windows-language-en.png" alt="Gabio Windows settings with English selected" width="800">
+
+</details>
+
+<details>
+<summary>Gabio Android 2.0 screenshot: the English profile</summary>
+
+Actual published APK on an isolated emulator with text at 200%. The
+default profile shows no personal account or history.
+
+<img src="assets/install/android-language-en.png" alt="Gabio Android profile in English with text at 200 percent" width="360">
 
 </details>
 
@@ -128,8 +142,9 @@ diagnosis.
 
 ### Update on Android
 
-In Gabio, open **Profil → Mises à jour** (Profile → Updates), then **Voir la mise
-à jour** (View update) when offered. Download and open the new APK, then confirm
+In Gabio 2.0 with English selected, open **Profile → Updates**, then **View
+update** when offered. With the French interface, use **Profil → Mises à jour →
+Voir la mise à jour**. Download and open the new APK, then confirm
 **Update / Install** over the existing app. Android still requires installation
 confirmation; Gabio does not silently install APKs.
 
