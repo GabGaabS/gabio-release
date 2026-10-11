@@ -8,6 +8,7 @@ builds are prereleases. Application source code remains private.
 ## Contents
 
 - [Latest iPhone/iPad IPA and all downloads](#latest-iphone--ipad-version)
+- [Choose French or English](#choose-french-or-english)
 - [Install and update on Windows](#install-on-windows)
 - [Install and update on Android](#install-on-android)
 - [Install and update on iPhone/iPad with AltStore](#install-on-iphone-or-ipad)
@@ -33,6 +34,31 @@ The same IPA supports both iPhone and iPad, starting with iOS/iPadOS 17.0.
 | Apple Silicon Mac | [0.1.0 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-macOS-0.1.0-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 | Intel Mac | [0.1.0 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-macOS-0.1.0-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 
+## Choose French or English
+
+**Windows 4.0.0** supports both languages. Open **Paramètres → Langue de
+l’interface → Français / English** and select English. Once changed, the path
+is **Settings → Interface language**.
+
+The choice is saved on this device. Your library, history, addons and saved
+files are retained. Audio and subtitle languages have separate settings;
+catalogue titles, descriptions and track names keep the text provided by
+their source.
+
+The Android and Apple versions currently offered here retain their French
+interface. Their next bilingual major versions are being checked. The IPA
+link above always points to the latest published version.
+
+<details>
+<summary>Gabio Windows 4.0 screenshot: choosing English</summary>
+
+Actual Electron interface from the published build, using a test profile
+without personal data. English is saved and retained after restarting.
+
+<img src="assets/install/windows-language-en.png" alt="Gabio Windows settings with English selected" width="800">
+
+</details>
+
 ## Install on Windows
 
 ### First installation
@@ -56,10 +82,11 @@ just a signing warning; keep the exact message for troubleshooting.
 ### Update on Windows
 
 Gabio checks its update channel at startup and announces new versions. In the
-update window, select **Télécharger** (Download), then **Installer et relancer**
-(Install and restart). You can also open **Réglages → Mises à jour → Rechercher
-une mise à jour** (Settings → Updates → Check for updates), then **Redémarrer
-et installer** (Restart and install).
+update window, select **Download**, then **Install and restart**. You can also
+open **Settings → Updates → Check for an update**, then **Restart and install**.
+With the French interface, the same controls are **Télécharger**, **Installer
+et relancer**, and **Paramètres → Mises à jour → Rechercher une mise à jour →
+Redémarrer et installer**.
 
 If the built-in updater fails, download the new EXE using the same stable-release
 link and install over Gabio. **Do not uninstall Gabio** for a normal update:
@@ -293,8 +320,9 @@ necessary.
 
 ### 4. Start using Gabio
 
-Open **Réglages → Addons** (Settings → Addons), configure your sources and choose
-a title/version in **Explorer**. Rooms and the remote require Internet; each
+Open **Addons** directly in the sidebar to configure your sources, then choose
+a title/version in **Découvrir** (Discover) or **Recherche** (Search). Rooms and
+the remote require Internet; each
 device plays its own video. Saved files can be played offline. Grant local
 network permission when using a local-network feature offered by Gabio.
 
@@ -325,10 +353,11 @@ reputation warning.
 
 ## Apple beta checks and limitations
 
-The documentation is available in French and English. Published apps currently
-have a French interface; a French/English selector is planned for the next major
-version and is not presented as already shipped. Current French button labels
-are included above so you can follow the instructions today.
+The documentation is available in French and English. Windows 4.0.0 includes
+the French/English selector described above. The Apple builds linked in this
+guide retain their French interface; their bilingual version is being checked
+and has not been published yet. French button labels remain included where
+they help you follow the current Apple instructions.
 
 The test iPad passed update, design, film/episode playback and resume, integrated
 subtitles, controls hiding, library management, rooms, remote and Sync checks.

@@ -8,6 +8,7 @@ Apple et Android sont des préversions. Les sources de l’application restent p
 ## Sommaire
 
 - [Dernier IPA et tous les téléchargements](#dernière-version-iphone--ipad)
+- [Choisir Français ou English](#choisir-français-ou-english)
 - [Installer et mettre à jour sur Windows](#installer-sur-windows)
 - [Installer et mettre à jour sur Android](#installer-sur-android)
 - [Installer et mettre à jour sur iPhone/iPad avec AltStore](#installer-sur-iphone-ou-ipad)
@@ -32,6 +33,31 @@ Un seul IPA convient à l’iPhone et à l’iPad, à partir d’iOS/iPadOS 17.0
 | iPhone / iPad | [IPA 0.1.0, build 3](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-iOS-0.1.0-unsigned.ipa) | [Guide AltStore](#installer-sur-iphone-ou-ipad) ; signature personnelle nécessaire. |
 | Mac Apple Silicon | [ZIP 0.1.0 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-macOS-0.1.0-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 | Mac Intel | [ZIP 0.1.0 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-macOS-0.1.0-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
+
+## Choisir Français ou English
+
+**Windows 4.0.0** propose les deux langues : ouvrez **Paramètres → Langue de
+l’interface → Français / English**, puis choisissez votre langue. En anglais,
+le chemin est **Settings → Interface language**.
+
+Le choix est enregistré sur cet appareil. Votre bibliothèque, historique,
+addons et fichiers conservés restent disponibles ; les langues audio et
+sous-titres se règlent séparément. Les titres, résumés et noms de pistes fournis
+par les catalogues ne sont pas traduits par ce réglage.
+
+Android et Apple conservent leur interface française dans les versions
+actuellement proposées ici. Leur prochaine version majeure bilingue est en
+cours de contrôle ; le lien IPA ci-dessus désigne la dernière version publiée.
+
+<details>
+<summary>Capture Gabio Windows 4.0 : choisir l’anglais</summary>
+
+Vraie interface Electron du build publié, avec un profil de test sans données
+personnelles. La sélection English est enregistrée et conservée au redémarrage.
+
+<img src="assets/install/windows-language-en.png" alt="Paramètres Gabio Windows avec le choix English" width="800">
+
+</details>
 
 ## Installer sur Windows
 
@@ -59,7 +85,7 @@ vient de la signature ; gardez le message exact pour le dépannage.
 
 Gabio vérifie son canal au démarrage et annonce une nouvelle version. Dans la
 fenêtre de mise à jour, choisissez **Télécharger**, puis **Installer et relancer**
-quand le téléchargement est terminé. Vous pouvez aussi utiliser **Réglages →
+quand le téléchargement est terminé. Vous pouvez aussi utiliser **Paramètres →
 Mises à jour → Rechercher une mise à jour**, puis **Redémarrer et installer**.
 
 Si la mise à jour intégrée échoue, téléchargez le nouvel EXE depuis le même lien
@@ -306,8 +332,9 @@ Gabio et vos fichiers conservés ; leur suppression n’est pas nécessaire.
 
 ### 4. Démarrer
 
-Ouvrez **Réglages → Addons** pour configurer vos sources, puis choisissez un titre
-et sa version dans **Explorer**. Les salons et la télécommande exigent Internet ;
+Ouvrez **Addons** dans la barre latérale pour configurer vos sources, puis
+choisissez un titre et sa version dans **Découvrir** ou **Recherche**. Les salons
+et la télécommande exigent Internet ;
 chaque appareil lit sa propre vidéo. Les fichiers conservés peuvent être lus
 hors connexion. Autorisez le réseau local si vous souhaitez utiliser une fonction
 réseau local proposée par Gabio.
@@ -339,9 +366,10 @@ modifié demandent un examen distinct d’une simple alerte de réputation.
 
 ## Vérification et limites de la bêta Apple
 
-Le guide est disponible en français et en anglais. Les applications publiées
-ont actuellement une interface française ; le choix français/anglais est prévu
-pour la prochaine version majeure, et n’est pas annoncé comme déjà livré.
+Le guide est disponible en français et en anglais. Windows 4.0.0 propose le
+choix Français / English décrit plus haut. Les versions Apple liées dans ce
+guide conservent une interface française ; la version bilingue est en cours
+de contrôle et n’est pas encore publiée.
 
 L’iPad de test a validé mise à jour, design, films/épisodes et reprise, sous-titres
 intégrés, masquage des commandes, gestion de Ma liste, salle, télécommande et Sync.
