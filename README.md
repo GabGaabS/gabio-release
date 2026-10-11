@@ -36,7 +36,7 @@ Un seul IPA convient à l’iPhone et à l’iPad, à partir d’iOS/iPadOS 17.0
 
 ## Choisir Français ou English
 
-**Windows 4.0.0** propose les deux langues : ouvrez **Paramètres → Langue de
+**Windows 4.0.1** propose les deux langues : ouvrez **Paramètres → Langue de
 l’interface → Français / English**, puis choisissez votre langue. En anglais,
 le chemin est **Settings → Interface language**.
 
@@ -45,7 +45,7 @@ addons et fichiers conservés restent disponibles ; les langues audio et
 sous-titres se règlent séparément. Les titres, résumés et noms de pistes fournis
 par les catalogues ne sont pas traduits par ce réglage.
 
-**Android 2.0.0** propose aussi les deux langues : ouvrez **Profil → Langue
+**Android 2.0.1** propose aussi les deux langues : ouvrez **Profil → Langue
 de Gabio → Français / English**. En anglais, le chemin est **Profile → Gabio
 language**. Le choix reste enregistré après fermeture et mise à jour.
 
@@ -381,7 +381,7 @@ modifié demandent un examen distinct d’une simple alerte de réputation.
 
 ## Vérification et limites de la bêta Apple
 
-Le guide est disponible en français et en anglais. Windows 4.0.0 propose le
+Le guide est disponible en français et en anglais. Windows 4.0.1 propose le
 choix Français / English décrit plus haut. Les versions Apple liées dans ce
 guide conservent une interface française ; la version bilingue est en cours
 de contrôle et n’est pas encore publiée.

@@ -36,7 +36,7 @@ The same IPA supports both iPhone and iPad, starting with iOS/iPadOS 17.0.
 
 ## Choose French or English
 
-**Windows 4.0.0** supports both languages. Open **Paramètres → Langue de
+**Windows 4.0.1** supports both languages. Open **Paramètres → Langue de
 l’interface → Français / English** and select English. Once changed, the path
 is **Settings → Interface language**.
 
@@ -45,7 +45,7 @@ files are retained. Audio and subtitle languages have separate settings;
 catalogue titles, descriptions and track names keep the text provided by
 their source.
 
-**Android 2.0.0** also supports both languages. Open **Profil → Langue de
+**Android 2.0.1** also supports both languages. Open **Profil → Langue de
 Gabio → Français / English** and select English. The English path is **Profile
 → Gabio language**. The choice is retained after closing and updating the app.
 
@@ -368,7 +368,7 @@ reputation warning.
 
 ## Apple beta checks and limitations
 
-The documentation is available in French and English. Windows 4.0.0 includes
+The documentation is available in French and English. Windows 4.0.1 includes
 the French/English selector described above. The Apple builds linked in this
 guide retain their French interface; their bilingual version is being checked
 and has not been published yet. French button labels remain included where
