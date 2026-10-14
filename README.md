@@ -30,14 +30,14 @@ Un seul IPA convient à l’iPhone et à l’iPad, à partir d’iOS/iPadOS 17.0
 | Plateforme | Téléchargement | Installation |
 | --- | --- | --- |
 | Windows | [Dernière version stable](https://github.com/GabGaabS/gabio-release/releases/latest) : fichier `Gabio-Setup-…exe` | Ouvrir l’installateur ; conserver l’installation existante pour une mise à jour. Installateur actuellement non signé. |
-| Android | **2.0.3 (code 31)** : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-universal.apk) | Autoriser l’installation depuis le navigateur utilisé, puis installer par-dessus Gabio. Certificat historique conservé. |
+| Android | **2.1.0 (code 32)** : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-universal.apk) | Autoriser l’installation depuis le navigateur utilisé, puis installer par-dessus Gabio. Certificat historique conservé. |
 | iPhone / iPad | [IPA 0.1.0, build 3](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-iOS-0.1.0-unsigned.ipa) | [Guide AltStore](#installer-sur-iphone-ou-ipad) ; signature personnelle nécessaire. |
 | Mac Apple Silicon | [ZIP 1.0.1 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.1/Gabio-macOS-1.0.1-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 | Mac Intel | [ZIP 1.0.1 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.1/Gabio-macOS-1.0.1-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 
 ## Choisir Français ou English
 
-**Windows 4.0.2** propose les deux langues : ouvrez **Paramètres → Langue de
+**Windows 4.1.0** propose les deux langues : ouvrez **Paramètres → Langue de
 l’interface → Français / English**, puis choisissez votre langue. En anglais,
 le chemin est **Settings → Interface language**.
 
@@ -46,7 +46,7 @@ addons et fichiers conservés restent disponibles ; les langues audio et
 sous-titres se règlent séparément. Les titres, résumés et noms de pistes fournis
 par les catalogues ne sont pas traduits par ce réglage.
 
-**Android 2.0.3** propose aussi les deux langues : ouvrez **Profil → Langue
+**Android 2.1.0** propose aussi les deux langues : ouvrez **Profil → Langue
 de Gabio → Français / English**. En anglais, le chemin est **Profile → Gabio
 language**. Le choix reste enregistré après fermeture et mise à jour.
 
@@ -127,8 +127,8 @@ Interface française, capturée avec un profil de test sans données personnelle
 ### Première installation
 
 Android **8 minimum**. Sur le téléphone/tablette, ouvrez la
-[préversion Android 2.0.3 (code 31)](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.0.3).
-Téléchargements directs : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-universal.apk).
+[préversion Android 2.1.0 (code 32)](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.1.0).
+Téléchargements directs : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-universal.apk).
 
 1. Téléchargez l’APK **ARM64** pour la plupart des téléphones récents. Si votre appareil n’est pas compatible ou si vous hésitez, prenez l’APK **universal**, plus volumineux. Les APK x86/x64 servent principalement aux émulateurs.
 2. Ouvrez le fichier depuis les téléchargements du navigateur ou le gestionnaire de fichiers.
@@ -149,7 +149,7 @@ les protections de l’appareil pour contourner un diagnostic inconnu.
 
 ### Premier lancement sur Android
 
-Avec **Android 2.0.3 (code 31)**, une installation neuve propose une seule fois
+Avec **Android 2.1.0 (code 32)**, une installation neuve propose une seule fois
 les mêmes premières étapes que sur PC :
 
 1. Choisissez le **nom** affiché dans vos séances entre amis, puis **Continuer**.
@@ -433,9 +433,9 @@ modifié demandent un examen distinct d’une simple alerte de réputation.
 
 ## Vérification et limites de la bêta Apple
 
-Le guide est disponible en français et en anglais. Windows 4.0.2, Android 2.0.3
+Le guide est disponible en français et en anglais. Windows 4.1.0, Android 2.1.0
 et Mac 1.0.1 proposent le choix Français / English. L’IPA actuellement publié
-reste iOS 0.1.0/build3 en français ; iOS 1.0.1/build6 est encore en contrôle.
+reste iOS 0.1.0/build3 en français ; iOS 1.1.0/build7 est en préparation et en contrôle, pas encore publié.
 
 Pour iOS 0.1.0/build3, l’iPad de test a validé mise à jour, design, films/épisodes
 et reprise, sous-titres intégrés, masquage des commandes, gestion de Ma liste,

@@ -30,14 +30,14 @@ The same IPA supports both iPhone and iPad, starting with iOS/iPadOS 17.0.
 | Platform | Download | Installation |
 | --- | --- | --- |
 | Windows | [Latest stable release](https://github.com/GabGaabS/gabio-release/releases/latest): `Gabio-Setup-…exe` | Run the installer. Install updates over your existing app. The installer is currently unsigned. |
-| Android | **2.0.3 (code 31)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-universal.apk) | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
+| Android | **2.1.0 (code 32)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-universal.apk) | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
 | iPhone / iPad | [IPA 0.1.0, build 3](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-iOS-0.1.0-unsigned.ipa) | [AltStore guide](#install-on-iphone-or-ipad); personal signing is required. |
 | Apple Silicon Mac | [1.0.1 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.1/Gabio-macOS-1.0.1-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 | Intel Mac | [1.0.1 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.1/Gabio-macOS-1.0.1-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 
 ## Choose French or English
 
-**Windows 4.0.2** supports both languages. Open **Paramètres → Langue de
+**Windows 4.1.0** supports both languages. Open **Paramètres → Langue de
 l’interface → Français / English** and select English. Once changed, the path
 is **Settings → Interface language**.
 
@@ -46,7 +46,7 @@ files are retained. Audio and subtitle languages have separate settings;
 catalogue titles, descriptions and track names keep the text provided by
 their source.
 
-**Android 2.0.3** also supports both languages. Open **Profil → Langue de
+**Android 2.1.0** also supports both languages. Open **Profil → Langue de
 Gabio → Français / English** and select English. The English path is **Profile
 → Gabio language**. The choice is retained after closing and updating the app.
 
@@ -127,8 +127,8 @@ French interface, captured using a test profile without personal data.
 ### First installation
 
 Android **8 or later** is required. Open the
-[Android 2.0.3 (code 31) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.0.3) on your phone/tablet.
-Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-universal.apk).
+[Android 2.1.0 (code 32) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.1.0) on your phone/tablet.
+Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-universal.apk).
 
 1. Download the **ARM64 APK** for most recent phones. If it is incompatible or you are unsure, use the larger **universal APK**. The x86/x64 builds mainly serve emulators.
 2. Open the APK from your browser’s downloads or a file manager.
@@ -149,7 +149,7 @@ diagnosis.
 
 ### First launch on Android
 
-With **Android 2.0.3 (code 31)**, a new installation offers the same initial
+With **Android 2.1.0 (code 32)**, a new installation offers the same initial
 steps as PC, once:
 
 1. Choose the **name** shown when you watch with friends, then select **Continue**.
@@ -419,9 +419,9 @@ reputation warning.
 
 ## Apple beta checks and limitations
 
-The guide is available in French and English. Windows 4.0.2, Android 2.0.3 and
+The guide is available in French and English. Windows 4.1.0, Android 2.1.0 and
 Mac 1.0.1 support the French / English choice. The latest published IPA remains
-iOS 0.1.0/build3 in French; iOS 1.0.1/build6 is still being checked.
+iOS 0.1.0/build3 in French; iOS 1.1.0/build7 is being prepared and checked, and is not yet published.
 
 For iOS 0.1.0/build3, the test iPad passed update, design, film/episode playback
 and resume, integrated subtitles, controls hiding, library management, rooms,
