@@ -1,12 +1,12 @@
-version: 4.0.2
+version: 4.1.0
 files:
   - url: >-
-      https://github.com/GabGaabS/gabio-release/releases/download/v4.0.2/Gabio-Setup-4.0.2.exe
+      https://github.com/GabGaabS/gabio-release/releases/download/v4.1.0/Gabio-Setup-4.1.0.exe
     sha512: >-
-      as65/M0GZwrGnShqrWrglzS8eO7ZUMPNDkDglmirGDdcvZ49dISL2Ak61R3IQAm+IxVQWc4k5wBRaqqnSAe4pg==
-    size: 210706200
+      yU+PLZ3NJuyrvDAlqp+L2eRDwXi6fF5rgk+KIFrOjbv1mTq6Jc4pi/r5fzTyNINmFcxk64lMDzYnjMsjUqM5ZQ==
+    size: 210715330
 path: >-
-  https://github.com/GabGaabS/gabio-release/releases/download/v4.0.2/Gabio-Setup-4.0.2.exe
+  https://github.com/GabGaabS/gabio-release/releases/download/v4.1.0/Gabio-Setup-4.1.0.exe
 sha512: >-
-  as65/M0GZwrGnShqrWrglzS8eO7ZUMPNDkDglmirGDdcvZ49dISL2Ak61R3IQAm+IxVQWc4k5wBRaqqnSAe4pg==
-releaseDate: '2026-10-13T22:41:10.661Z'
+  yU+PLZ3NJuyrvDAlqp+L2eRDwXi6fF5rgk+KIFrOjbv1mTq6Jc4pi/r5fzTyNINmFcxk64lMDzYnjMsjUqM5ZQ==
+releaseDate: '2026-10-14T20:40:00.773Z'
