@@ -11,6 +11,7 @@ builds are prereleases. Application source code remains private.
 - [Choose French or English](#choose-french-or-english)
 - [Install and update on Windows](#install-on-windows)
 - [Install and update on Android](#install-on-android)
+- [First Android launch: name, addons and sync](#first-launch-on-android)
 - [Install and update on iPhone/iPad with AltStore](#install-on-iphone-or-ipad)
 - [Install and update on Mac](#install-on-mac)
 - [Security alerts and troubleshooting](#security-alerts-and-troubleshooting)
@@ -29,14 +30,14 @@ The same IPA supports both iPhone and iPad, starting with iOS/iPadOS 17.0.
 | Platform | Download | Installation |
 | --- | --- | --- |
 | Windows | [Latest stable release](https://github.com/GabGaabS/gabio-release/releases/latest): `Gabio-Setup-…exe` | Run the installer. Install updates over your existing app. The installer is currently unsigned. |
-| Android | [Android releases](https://github.com/GabGaabS/gabio-release/releases?q=android-v&expanded=true): ARM64 APK for most phones | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
+| Android | **2.0.3 (code 31)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-universal.apk) | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
 | iPhone / iPad | [IPA 0.1.0, build 3](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-iOS-0.1.0-unsigned.ipa) | [AltStore guide](#install-on-iphone-or-ipad); personal signing is required. |
 | Apple Silicon Mac | [1.0.0 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/Gabio-macOS-1.0.0-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 | Intel Mac | [1.0.0 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/Gabio-macOS-1.0.0-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 
 ## Choose French or English
 
-**Windows 4.0.1** supports both languages. Open **Paramètres → Langue de
+**Windows 4.0.2** supports both languages. Open **Paramètres → Langue de
 l’interface → Français / English** and select English. Once changed, the path
 is **Settings → Interface language**.
 
@@ -45,7 +46,7 @@ files are retained. Audio and subtitle languages have separate settings;
 catalogue titles, descriptions and track names keep the text provided by
 their source.
 
-**Android 2.0.1** also supports both languages. Open **Profil → Langue de
+**Android 2.0.3** also supports both languages. Open **Profil → Langue de
 Gabio → Français / English** and select English. The English path is **Profile
 → Gabio language**. The choice is retained after closing and updating the app.
 
@@ -125,8 +126,9 @@ French interface, captured using a test profile without personal data.
 
 ### First installation
 
-Android **8 or later** is required. Open the [Android releases](https://github.com/GabGaabS/gabio-release/releases?q=android-v&expanded=true)
-on your phone/tablet and choose the newest Android prerelease, named `android-v…`.
+Android **8 or later** is required. Open the
+[Android 2.0.3 (code 31) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.0.3) on your phone/tablet.
+Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-universal.apk).
 
 1. Download the **ARM64 APK** for most recent phones. If it is incompatible or you are unsure, use the larger **universal APK**. The x86/x64 builds mainly serve emulators.
 2. Open the APK from your browser’s downloads or a file manager.
@@ -144,6 +146,42 @@ not be described as the total absence of a signing certificate.
 If protection blocks installation, keep the exact message and APK filename.
 Do not globally disable Play Protect or device security to bypass an unknown
 diagnosis.
+
+### First launch on Android
+
+With **Android 2.0.3 (code 31)**, a new installation offers the same initial
+steps as PC, once:
+
+1. Choose the **name** shown when you watch with friends, then select **Continue**.
+2. Choose addons from **ThePirateBay+**, **OpenSubtitles v2** and **Torrentio**
+   with CAM releases excluded. Select **Install selected addons** to confirm
+   their addition, or **Continue to my devices** to skip this step. Existing
+   addon configurations are kept, including disabled addons.
+3. **Sync is optional**. To share your name, library and playback progress,
+   select **Sync with my devices**. On your already-configured PC, open
+   **Profile and sync → Show code**, then enter that private code only in
+   the phone’s Gabio form. Your library is merged; videos stay on each device.
+   You can also finish with **Explore Gabio** without pairing.
+
+If the PC has no chain yet, select **Create a private chain** and wait for
+sync confirmation before sharing its code. On the phone, a **pending** pairing
+means the exchange is not confirmed yet: use **Sync now** and keep the displayed
+message if the chain is still missing. Never share this code in a public room.
+
+**Set up later** closes the assistant. It will not appear automatically again,
+including after interruption, closing or an update. Updating an installation
+you have already used keeps its data and does not open the assistant.
+To open it yourself later, use **Profile → Review initial setup**.
+
+<details>
+<summary>Android 2.0.2 screenshot: optional device sync</summary>
+
+Actual release APK on an isolated emulator with text at 200%. No personal
+name, pairing code or user library is displayed.
+
+<img src="assets/install/android-onboarding-sync-en.png" alt="Gabio Android setup: optional sync with other devices in English" width="360">
+
+</details>
 
 ### Update on Android
 
@@ -381,14 +419,14 @@ reputation warning.
 
 ## Apple beta checks and limitations
 
-The guide is available in French and English. Windows 4.0.1, Android 2.0.1 and
+The guide is available in French and English. Windows 4.0.2, Android 2.0.3 and
 Mac 1.0.0 support the French / English choice. The latest published IPA remains
-iOS 0.1.0/build3 in French; iOS 1.0.0 is still being checked.
+iOS 0.1.0/build3 in French; iOS 1.0.1/build6 is still being checked.
 
 For iOS 0.1.0/build3, the test iPad passed update, design, film/episode playback
 and resume, integrated subtitles, controls hiding, library management, rooms,
 remote and Sync checks. Its fifteen scenarios pass on each simulator family.
-These historical results do not qualify the iOS 1.0.0 candidate.
+These historical results do not qualify the iOS 1.0.1/build6 candidate.
 
 Mac 1.0.0 passes native checks on two Mac hosts, Apple Silicon and Intel:
 playback, menus, offline playback, full screen, minimize/restore and returning

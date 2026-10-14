@@ -11,6 +11,7 @@ Apple et Android sont des préversions. Les sources de l’application restent p
 - [Choisir Français ou English](#choisir-français-ou-english)
 - [Installer et mettre à jour sur Windows](#installer-sur-windows)
 - [Installer et mettre à jour sur Android](#installer-sur-android)
+- [Premier lancement Android : nom, addons et synchronisation](#premier-lancement-sur-android)
 - [Installer et mettre à jour sur iPhone/iPad avec AltStore](#installer-sur-iphone-ou-ipad)
 - [Installer et mettre à jour sur Mac](#installer-sur-mac)
 - [Alertes de sécurité et dépannage](#alertes-de-sécurité-et-dépannage)
@@ -29,14 +30,14 @@ Un seul IPA convient à l’iPhone et à l’iPad, à partir d’iOS/iPadOS 17.0
 | Plateforme | Téléchargement | Installation |
 | --- | --- | --- |
 | Windows | [Dernière version stable](https://github.com/GabGaabS/gabio-release/releases/latest) : fichier `Gabio-Setup-…exe` | Ouvrir l’installateur ; conserver l’installation existante pour une mise à jour. Installateur actuellement non signé. |
-| Android | [Versions Android](https://github.com/GabGaabS/gabio-release/releases?q=android-v&expanded=true) : APK ARM64 pour la plupart des téléphones | Autoriser l’installation depuis le navigateur utilisé, puis installer par-dessus Gabio. Certificat historique conservé. |
+| Android | **2.0.3 (code 31)** : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-universal.apk) | Autoriser l’installation depuis le navigateur utilisé, puis installer par-dessus Gabio. Certificat historique conservé. |
 | iPhone / iPad | [IPA 0.1.0, build 3](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-iOS-0.1.0-unsigned.ipa) | [Guide AltStore](#installer-sur-iphone-ou-ipad) ; signature personnelle nécessaire. |
 | Mac Apple Silicon | [ZIP 1.0.0 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/Gabio-macOS-1.0.0-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 | Mac Intel | [ZIP 1.0.0 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/Gabio-macOS-1.0.0-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 
 ## Choisir Français ou English
 
-**Windows 4.0.1** propose les deux langues : ouvrez **Paramètres → Langue de
+**Windows 4.0.2** propose les deux langues : ouvrez **Paramètres → Langue de
 l’interface → Français / English**, puis choisissez votre langue. En anglais,
 le chemin est **Settings → Interface language**.
 
@@ -45,7 +46,7 @@ addons et fichiers conservés restent disponibles ; les langues audio et
 sous-titres se règlent séparément. Les titres, résumés et noms de pistes fournis
 par les catalogues ne sont pas traduits par ce réglage.
 
-**Android 2.0.1** propose aussi les deux langues : ouvrez **Profil → Langue
+**Android 2.0.3** propose aussi les deux langues : ouvrez **Profil → Langue
 de Gabio → Français / English**. En anglais, le chemin est **Profile → Gabio
 language**. Le choix reste enregistré après fermeture et mise à jour.
 
@@ -125,9 +126,9 @@ Interface française, capturée avec un profil de test sans données personnelle
 
 ### Première installation
 
-Android **8 minimum**. Sur le téléphone/tablette, ouvrez les
-[versions Android](https://github.com/GabGaabS/gabio-release/releases?q=android-v&expanded=true)
-et choisissez la préversion Android la plus récente, intitulée `android-v…`.
+Android **8 minimum**. Sur le téléphone/tablette, ouvrez la
+[préversion Android 2.0.3 (code 31)](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.0.3).
+Téléchargements directs : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-universal.apk).
 
 1. Téléchargez l’APK **ARM64** pour la plupart des téléphones récents. Si votre appareil n’est pas compatible ou si vous hésitez, prenez l’APK **universal**, plus volumineux. Les APK x86/x64 servent principalement aux émulateurs.
 2. Ouvrez le fichier depuis les téléchargements du navigateur ou le gestionnaire de fichiers.
@@ -145,6 +146,44 @@ n’est donc pas décrite comme une absence totale de certificat.
 Si un système de protection bloque réellement l’installation, conservez le
 message et la référence de l’APK. Ne désactivez pas globalement Play Protect ou
 les protections de l’appareil pour contourner un diagnostic inconnu.
+
+### Premier lancement sur Android
+
+Avec **Android 2.0.3 (code 31)**, une installation neuve propose une seule fois
+les mêmes premières étapes que sur PC :
+
+1. Choisissez le **nom** affiché dans vos séances entre amis, puis **Continuer**.
+2. Choisissez vos addons parmi **ThePirateBay+**, **OpenSubtitles v2** et
+   **Torrentio** avec les versions CAM exclues. Touchez **Installer les addons
+   sélectionnés** pour confirmer leur ajout, ou **Continuer vers mes appareils**
+   pour passer cette étape. Les addons déjà configurés, même désactivés, sont conservés.
+3. La **synchronisation est facultative**. Pour retrouver votre nom, votre
+   bibliothèque et votre progression, touchez **Synchroniser avec mes appareils**.
+   Sur le PC déjà configuré, ouvrez **Profil et synchronisation → Afficher le code**,
+   puis saisissez ce code privé uniquement dans le formulaire Gabio du téléphone.
+   Votre bibliothèque est fusionnée ; les vidéos restent sur chaque appareil.
+   Vous pouvez aussi terminer avec **Découvrir Gabio** sans association.
+
+Si le PC n’a pas encore de chaîne, choisissez **Créer une chaîne privée** et
+attendez la confirmation de synchronisation avant de partager son code. Sur le
+téléphone, une association **en attente** indique que l’échange n’est pas encore
+confirmé : utilisez **Synchroniser maintenant** et gardez le message affiché
+si la chaîne reste introuvable. Ne transmettez jamais ce code dans un salon public.
+
+**Configurer plus tard** ferme l’assistant. Il ne s’affiche plus automatiquement,
+même après interruption, fermeture ou mise à jour. Une installation déjà utilisée
+conserve ses données et n’ouvre pas l’assistant lors de cette mise à jour.
+Pour le revoir volontairement, ouvrez **Profil → Revoir la configuration initiale**.
+
+<details>
+<summary>Capture Android 2.0.2 : proposition facultative de synchronisation</summary>
+
+Vraie interface de l’APK release, en anglais, sur un émulateur isolé avec police
+à 200 %. Aucun nom personnel, code d’association ni bibliothèque utilisateur n’est affiché.
+
+<img src="assets/install/android-onboarding-sync-en.png" alt="Assistant Gabio Android : synchronisation facultative avec les autres appareils, en anglais" width="360">
+
+</details>
 
 ### Mettre à jour sur Android
 
@@ -394,14 +433,14 @@ modifié demandent un examen distinct d’une simple alerte de réputation.
 
 ## Vérification et limites de la bêta Apple
 
-Le guide est disponible en français et en anglais. Windows 4.0.1, Android 2.0.1
+Le guide est disponible en français et en anglais. Windows 4.0.2, Android 2.0.3
 et Mac 1.0.0 proposent le choix Français / English. L’IPA actuellement publié
-reste iOS 0.1.0/build3 en français ; iOS 1.0.0 est encore en contrôle.
+reste iOS 0.1.0/build3 en français ; iOS 1.0.1/build6 est encore en contrôle.
 
 Pour iOS 0.1.0/build3, l’iPad de test a validé mise à jour, design, films/épisodes
 et reprise, sous-titres intégrés, masquage des commandes, gestion de Ma liste,
 salle, télécommande et Sync. Ses quinze scénarios passent sur chaque famille
-de simulateur. Ces résultats historiques ne qualifient pas le candidat iOS 1.0.0.
+de simulateur. Ces résultats historiques ne qualifient pas le candidat iOS 1.0.1/build6.
 
 Mac 1.0.0 passe les contrôles natifs sur deux hôtes Mac, Apple Silicon et Intel :
 lecture, menus, hors connexion, plein écran, réduction/restauration et retour
