@@ -6,8 +6,8 @@ import { readFile, writeFile, stat, mkdir, access } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import crypto from 'node:crypto';
 
-const ipaName = 'Gabio-iOS-1.0.0-unsigned.ipa';
-const macNames = ['Gabio-macOS-1.0.0-arm64.zip', 'Gabio-macOS-1.0.0-x64.zip'];
+const ipaName = 'Gabio-iOS-1.0.1-unsigned.ipa';
+const macNames = ['Gabio-macOS-1.0.1-arm64.zip', 'Gabio-macOS-1.0.1-x64.zip'];
 const diagnosticName = 'apple-diagnostic.enc';
 const sumsName = 'SHA256SUMS-Apple.txt';
 export function destination(env) {
