@@ -32,8 +32,8 @@ The same IPA supports both iPhone and iPad, starting with iOS/iPadOS 17.0.
 | Windows | [Latest stable release](https://github.com/GabGaabS/gabio-release/releases/latest): `Gabio-Setup-…exe` | Run the installer. Install updates over your existing app. The installer is currently unsigned. |
 | Android | **2.0.3 (code 31)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.0.3/Gabio-Android-2.0.3-universal.apk) | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
 | iPhone / iPad | [IPA 0.1.0, build 3](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/Gabio-iOS-0.1.0-unsigned.ipa) | [AltStore guide](#install-on-iphone-or-ipad); personal signing is required. |
-| Apple Silicon Mac | [1.0.0 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/Gabio-macOS-1.0.0-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
-| Intel Mac | [1.0.0 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/Gabio-macOS-1.0.0-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
+| Apple Silicon Mac | [1.0.1 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.1/Gabio-macOS-1.0.1-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
+| Intel Mac | [1.0.1 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.1/Gabio-macOS-1.0.1-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 
 ## Choose French or English
 
@@ -50,7 +50,7 @@ their source.
 Gabio → Français / English** and select English. The English path is **Profile
 → Gabio language**. The choice is retained after closing and updating the app.
 
-**Mac 1.0.0** supports French / English. Open **Settings → Interface
+**Mac 1.0.1** supports French / English. Open **Settings → Interface
 language** (**Paramètres → Langue de l’interface** with French selected).
 The choice is retained after closing and updating. Changing it during playback
 preserves the video, position, tracks, volume and calibration.
@@ -332,16 +332,16 @@ downloads while keeping the app open. Keep the existing installation and account
 
 ## Install on Mac
 
-**Gabio Mac 1.0.0 — prerelease**: [release notes](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.0.0) ·
-[SHA-256 checksums for both ZIP files](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/SHA256SUMS-macOS.txt).
+**Gabio Mac 1.0.1 — prerelease**: [release notes](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.0.1) ·
+[SHA-256 checksums for both ZIP files](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.1/SHA256SUMS-macOS.txt).
 This Mac release is separate; the latest IPA remains 0.1.0/build3.
 
 ### 1. Choose your download
 
 Open **Apple menu  → About This Mac**:
 
-- **Apple chip M1, M2, M3, M4…**: [Gabio 1.0.0 Apple Silicon / ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/Gabio-macOS-1.0.0-arm64.zip).
-- **Intel processor**: [Gabio 1.0.0 Intel / x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/Gabio-macOS-1.0.0-x64.zip).
+- **Apple chip M1, M2, M3, M4…**: [Gabio 1.0.1 Apple Silicon / ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.1/Gabio-macOS-1.0.1-arm64.zip).
+- **Intel processor**: [Gabio 1.0.1 Intel / x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.1/Gabio-macOS-1.0.1-x64.zip).
 
 macOS **13 or later** is required. Mac ZIP files contain the desktop application;
 the IPA belongs to iPhone/iPad. Installing the Mac desktop app does not require
@@ -370,7 +370,7 @@ The reference screenshot uses French; **Ouvrir quand même** means **Open Anyway
 </details>
 
 For a damaged archive/app message, download the ZIP again and compare it with
-[SHA256SUMS-macOS.txt](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/SHA256SUMS-macOS.txt). Keep the exact message if it persists; do
+[SHA256SUMS-macOS.txt](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.1/SHA256SUMS-macOS.txt). Keep the exact message if it persists; do
 not disable macOS security globally.
 
 ### 3. Update on Mac
@@ -382,7 +382,7 @@ necessary.
 
 The built-in update check still reads the shared Apple channel, which retains
 the iOS 0.1.0/build3 reference. This channel does not announce the separate
-Mac 1.0.0 prerelease; use this README’s Mac links to get it.
+Mac 1.0.1 prerelease; use this README’s Mac links to get it.
 
 ### 4. Start using Gabio
 
@@ -420,7 +420,7 @@ reputation warning.
 ## Apple beta checks and limitations
 
 The guide is available in French and English. Windows 4.0.2, Android 2.0.3 and
-Mac 1.0.0 support the French / English choice. The latest published IPA remains
+Mac 1.0.1 support the French / English choice. The latest published IPA remains
 iOS 0.1.0/build3 in French; iOS 1.0.1/build6 is still being checked.
 
 For iOS 0.1.0/build3, the test iPad passed update, design, film/episode playback
@@ -428,19 +428,19 @@ and resume, integrated subtitles, controls hiding, library management, rooms,
 remote and Sync checks. Its fifteen scenarios pass on each simulator family.
 These historical results do not qualify the iOS 1.0.1/build6 candidate.
 
-Mac 1.0.0 passes native checks on two Mac hosts, Apple Silicon and Intel:
+Mac 1.0.1 passes native checks on two Mac hosts, Apple Silicon and Intel:
 playback, menus, offline playback, full screen, minimize/restore and returning
 to the player after using another app. These journeys preserve the position
 and tracks. Gatekeeper when opening the downloaded ZIP on a user Mac remains
 to be checked; these tests do not cover every TV, HDR/multichannel audio codec
 or long transfer.
 
-Limits are described in the [Mac 1.0.0 notes](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.0.0) and
+Limits are described in the [Mac 1.0.1 notes](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.0.1) and
 [iOS 0.1.0 notes](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v0.1.0). Native-library licences
 accompany the apps.
 
 Download from this public repository and check the
-[Mac 1.0.0 SHA-256 checksums](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.0/SHA256SUMS-macOS.txt) or the
+[Mac 1.0.1 SHA-256 checksums](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.0.1/SHA256SUMS-macOS.txt) or the
 [iOS 0.1.0 SHA-256 checksums](https://github.com/GabGaabS/gabio-release/releases/download/apple-v0.1.0/SHA256SUMS-Apple.txt).
 Windows and Android channels, the shared Apple channel and the AltStore source
 are preserved during this separate Mac publication. This public repository
