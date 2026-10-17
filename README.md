@@ -9,6 +9,7 @@ Apple et Android sont des préversions. Les sources de l’application restent p
 
 - [Dernier IPA et tous les téléchargements](#dernière-version-iphone--ipad)
 - [Choisir Français ou English](#choisir-français-ou-english)
+- [Voir et masquer les titres vus](#voir-et-masquer-les-titres-vus)
 - [Installer et mettre à jour sur Windows](#installer-sur-windows)
 - [Installer et mettre à jour sur Android](#installer-sur-android)
 - [Premier lancement Android : nom, addons et synchronisation](#premier-lancement-sur-android)
@@ -29,15 +30,15 @@ Un seul IPA convient à l’iPhone et à l’iPad, à partir d’iOS/iPadOS 17.0
 
 | Plateforme | Téléchargement | Installation |
 | --- | --- | --- |
-| Windows | [Dernière version stable](https://github.com/GabGaabS/gabio-release/releases/latest) : fichier `Gabio-Setup-…exe` | Ouvrir l’installateur ; conserver l’installation existante pour une mise à jour. Installateur actuellement non signé. |
-| Android | **2.1.0 (code 32)** : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-universal.apk) | Autoriser l’installation depuis le navigateur utilisé, puis installer par-dessus Gabio. Certificat historique conservé. |
+| Windows | **4.2.0** : [EXE Windows 64 bits](https://github.com/GabGaabS/gabio-release/releases/download/v4.2.0/Gabio-Setup-4.2.0.exe) · [Dernière version stable](https://github.com/GabGaabS/gabio-release/releases/latest) | Ouvrir l’installateur ; conserver l’installation existante pour une mise à jour. Installateur actuellement non signé. |
+| Android | **2.2.0 (code 33)** : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.2.0/Gabio-Android-2.2.0-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.2.0/Gabio-Android-2.2.0-universal.apk) | Autoriser l’installation depuis le navigateur utilisé, puis installer par-dessus Gabio. Certificat historique conservé. |
 | iPhone / iPad | [IPA 1.1.0, build 9](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/Gabio-iOS-1.1.0-unsigned.ipa) | [Guide AltStore](#installer-sur-iphone-ou-ipad) ; signature personnelle nécessaire. |
 | Mac Apple Silicon | [ZIP 1.1.0 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/Gabio-macOS-1.1.0-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 | Mac Intel | [ZIP 1.1.0 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/Gabio-macOS-1.1.0-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 
 ## Choisir Français ou English
 
-**Windows 4.1.0** propose les deux langues : ouvrez **Paramètres → Langue de
+**Windows 4.2.0** propose les deux langues : ouvrez **Paramètres → Langue de
 l’interface → Français / English**, puis choisissez votre langue. En anglais,
 le chemin est **Settings → Interface language**.
 
@@ -46,7 +47,7 @@ addons et fichiers conservés restent disponibles ; les langues audio et
 sous-titres se règlent séparément. Les titres, résumés et noms de pistes fournis
 par les catalogues ne sont pas traduits par ce réglage.
 
-**Android 2.1.0** propose aussi les deux langues : ouvrez **Profil → Langue
+**Android 2.2.0** propose aussi les deux langues : ouvrez **Profil → Langue
 de Gabio → Français / English**. En anglais, le chemin est **Profile → Gabio
 language**. Le choix reste enregistré après fermeture et mise à jour.
 
@@ -74,6 +75,46 @@ Vrai APK publié, sur un émulateur isolé avec police à 200 %. Le profil
 par défaut ne montre aucun compte ni historique personnel.
 
 <img src="assets/install/android-language-en.png" alt="Profil Gabio Android en anglais, police à 200 pour cent" width="360">
+
+</details>
+
+## Voir et masquer les titres vus
+
+Disponible avec **Windows 4.2.0** et **Android 2.2.0 (code 33)**.
+Une coche **✓ Vu** apparaît sur l’affiche d’un film terminé dans Gabio,
+présent dans votre journal ou repéré grâce à une note personnelle Letterboxd
+explicitement importée ou synchronisée. Une note saisie seulement dans Gabio
+ne suffit pas. Pour une série, marquez la série entière comme terminée : un
+épisode terminé ne rend pas toute la série vue.
+
+- **Windows** : dans la recherche, la découverte ou un catalogue d’addon,
+  cochez **Masquer les déjà vus**. Le choix est conservé sur cet appareil.
+- **Android** : ouvrez la recherche ou un catalogue, puis cochez
+  **Masquer les titres déjà vus**. Le choix est conservé sur cet appareil.
+- La bibliothèque et **Continuer à regarder** restent accessibles. Si tous
+  les titres d’une page sont masqués, affichez la page suivante ou désactivez
+  le filtre. Un rapprochement ambigu reste visible.
+
+Sur Windows, votre intégration Letterboxd existante fournit ces notes ; vous
+pouvez aussi ouvrir **Paramètres → Compte Letterboxd → Import manuel et export
+→ Importer ratings.csv…**. Sur Android, ouvrez **Ma liste → Statistiques et
+journal → Importer mes notes Letterboxd**, puis choisissez **ratings.csv**
+dans votre export Letterboxd décompressé, en UTF-8 (2 Mo et 10 000 lignes maximum).
+
+**Les notes Letterboxd importées seules sur Android restent locales à cet
+appareil.** Importez le CSV sur chaque appareil concerné : ces notes ne sont
+pas ajoutées à Sync, à votre journal ou à vos statistiques. Les preuves de
+bibliothèque, progression et journal continuent d’utiliser les réglages de
+synchronisation existants. Aucune date de visionnage n’est inventée.
+
+<details>
+<summary>Windows 4.2 : coches Vu en français</summary>
+
+Vraie interface Electron du candidat 4.2.0 construit et inspecté, avec des
+titres synthétiques et un profil de test isolé, sans données personnelles.
+La série partielle reste visible. Cette capture ne représente pas un catalogue réel.
+
+<img src="assets/install/windows-watched-fr.png" alt="Recherche Gabio Windows : coches Vu sur deux films et série partielle sans coche" width="800">
 
 </details>
 
@@ -125,8 +166,8 @@ Interface française, capturée avec un profil de test sans données personnelle
 ### Première installation
 
 Android **8 minimum**. Sur le téléphone/tablette, ouvrez la
-[préversion Android 2.1.0 (code 32)](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.1.0).
-Téléchargements directs : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-universal.apk).
+[préversion Android 2.2.0 (code 33)](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.2.0).
+Téléchargements directs : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.2.0/Gabio-Android-2.2.0-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.2.0/Gabio-Android-2.2.0-universal.apk).
 
 1. Téléchargez l’APK **ARM64** pour la plupart des téléphones récents. Si votre appareil n’est pas compatible ou si vous hésitez, prenez l’APK **universal**, plus volumineux. Les APK x86/x64 servent principalement aux émulateurs.
 2. Ouvrez le fichier depuis les téléchargements du navigateur ou le gestionnaire de fichiers.
@@ -147,7 +188,7 @@ les protections de l’appareil pour contourner un diagnostic inconnu.
 
 ### Premier lancement sur Android
 
-Avec **Android 2.1.0 (code 32)**, une installation neuve propose une seule fois
+Avec **Android 2.2.0 (code 33)**, une installation neuve propose une seule fois
 les mêmes premières étapes que sur PC :
 
 1. Choisissez le **nom** affiché dans vos séances entre amis, puis **Continuer**.
@@ -463,7 +504,7 @@ modifié demandent un examen distinct d’une simple alerte de réputation.
 
 ## Vérification et limites de la bêta Apple
 
-Les guides, Windows 4.1.0, Android 2.1.0 et Mac 1.1.0 conservent Français / English. iOS 1.1.0/build9 a reçu une acceptation manuelle limitée sur l’iPad de test le 2026-10-17 : mise à jour avec données conservées, Cinemeta New / Afficher les titres et seules les actions du lecteur réellement détaillées dans les notes de version. Les suites automatisées complètes iPhone/iPad ne sont pas qualifiées pour ce build. Aucun essai physique supplémentaire sur iPhone n’en est déduit.
+Les guides, Windows 4.2.0, Android 2.2.0 et Mac 1.1.0 conservent Français / English. iOS 1.1.0/build9 a reçu une acceptation manuelle limitée sur l’iPad de test le 2026-10-17 : mise à jour avec données conservées, Cinemeta New / Afficher les titres et seules les actions du lecteur réellement détaillées dans les notes de version. Les suites automatisées complètes iPhone/iPad ne sont pas qualifiées pour ce build. Aucun essai physique supplémentaire sur iPhone n’en est déduit.
 
 Pour iOS 0.1.0/build3, l’iPad de test a validé mise à jour, design, films/épisodes
 et reprise, sous-titres intégrés, masquage des commandes, gestion de Ma liste,

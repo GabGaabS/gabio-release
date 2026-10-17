@@ -9,6 +9,7 @@ builds are prereleases. Application source code remains private.
 
 - [Latest iPhone/iPad IPA and all downloads](#latest-iphone--ipad-version)
 - [Choose French or English](#choose-french-or-english)
+- [See and hide watched titles](#see-and-hide-watched-titles)
 - [Install and update on Windows](#install-on-windows)
 - [Install and update on Android](#install-on-android)
 - [First Android launch: name, addons and sync](#first-launch-on-android)
@@ -29,15 +30,15 @@ The same IPA supports both iPhone and iPad, starting with iOS/iPadOS 17.0.
 
 | Platform | Download | Installation |
 | --- | --- | --- |
-| Windows | [Latest stable release](https://github.com/GabGaabS/gabio-release/releases/latest): `Gabio-Setup-…exe` | Run the installer. Install updates over your existing app. The installer is currently unsigned. |
-| Android | **2.1.0 (code 32)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-universal.apk) | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
+| Windows | **4.2.0**: [64-bit Windows EXE](https://github.com/GabGaabS/gabio-release/releases/download/v4.2.0/Gabio-Setup-4.2.0.exe) · [Latest stable release](https://github.com/GabGaabS/gabio-release/releases/latest) | Run the installer. Install updates over your existing app. The installer is currently unsigned. |
+| Android | **2.2.0 (code 33)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.2.0/Gabio-Android-2.2.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.2.0/Gabio-Android-2.2.0-universal.apk) | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
 | iPhone / iPad | [IPA 1.1.0, build 9](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/Gabio-iOS-1.1.0-unsigned.ipa) | [AltStore guide](#install-on-iphone-or-ipad); personal signing is required. |
 | Apple Silicon Mac | [1.1.0 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/Gabio-macOS-1.1.0-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 | Intel Mac | [1.1.0 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/Gabio-macOS-1.1.0-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 
 ## Choose French or English
 
-**Windows 4.1.0** supports both languages. Open **Paramètres → Langue de
+**Windows 4.2.0** supports both languages. Open **Paramètres → Langue de
 l’interface → Français / English** and select English. Once changed, the path
 is **Settings → Interface language**.
 
@@ -46,7 +47,7 @@ files are retained. Audio and subtitle languages have separate settings;
 catalogue titles, descriptions and track names keep the text provided by
 their source.
 
-**Android 2.1.0** also supports both languages. Open **Profil → Langue de
+**Android 2.2.0** also supports both languages. Open **Profil → Langue de
 Gabio → Français / English** and select English. The English path is **Profile
 → Gabio language**. The choice is retained after closing and updating the app.
 
@@ -74,6 +75,45 @@ Actual published APK on an isolated emulator with text at 200%. The
 default profile shows no personal account or history.
 
 <img src="assets/install/android-language-en.png" alt="Gabio Android profile in English with text at 200 percent" width="360">
+
+</details>
+
+## See and hide watched titles
+
+Available in **Windows 4.2.0** and **Android 2.2.0 (code 33)**.
+A **✓ Watched** check appears on a film’s poster when it is completed in
+Gabio, present in your diary, or identified by a personal Letterboxd rating
+you explicitly imported or synced. A rating saved only in Gabio is insufficient.
+A series needs to be explicitly marked completed as a whole: a completed
+episode does not make the entire series watched.
+
+- **Windows**: in search, discovery or an addon catalogue, select
+  **Hide watched titles**. This preference is saved on this device.
+- **Android**: open search or a catalogue, then select **Hide watched titles**.
+  This preference is saved on this device.
+- Your library and **Continue watching** remain accessible. If every title
+  on a page is hidden, open the next page or disable the filter. Ambiguous
+  matches stay visible.
+
+On Windows, your existing Letterboxd integration provides these ratings; you
+can also use **Settings → Letterboxd account → Manual import and export →
+Import ratings.csv…**. On Android, open **My list → Statistics and diary →
+Import my Letterboxd ratings**, then choose **ratings.csv** from your extracted
+Letterboxd export, encoded as UTF-8 (up to 2 MB and 10,000 rows).
+
+**Standalone Letterboxd ratings imported on Android stay on that device.**
+Import the CSV on each device where you need them: these ratings are not
+added to Sync, your diary or your statistics. Library, progress and diary
+records keep using their existing sync settings. No watch date is invented.
+
+<details>
+<summary>Windows 4.2: Watched checks in English</summary>
+
+Actual Electron interface from the built and inspected 4.2.0 candidate, using
+synthetic titles and an isolated test profile with no personal data. The
+partially watched series stays visible. This screenshot is not a live catalogue.
+
+<img src="assets/install/windows-watched-en.png" alt="Gabio Windows search: Watched checks on three films and no check on the partially watched series" width="800">
 
 </details>
 
@@ -125,8 +165,8 @@ French interface, captured using a test profile without personal data.
 ### First installation
 
 Android **8 or later** is required. Open the
-[Android 2.1.0 (code 32) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.1.0) on your phone/tablet.
-Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.1.0/Gabio-Android-2.1.0-universal.apk).
+[Android 2.2.0 (code 33) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.2.0) on your phone/tablet.
+Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.2.0/Gabio-Android-2.2.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.2.0/Gabio-Android-2.2.0-universal.apk).
 
 1. Download the **ARM64 APK** for most recent phones. If it is incompatible or you are unsure, use the larger **universal APK**. The x86/x64 builds mainly serve emulators.
 2. Open the APK from your browser’s downloads or a file manager.
@@ -147,7 +187,7 @@ diagnosis.
 
 ### First launch on Android
 
-With **Android 2.1.0 (code 32)**, a new installation offers the same initial
+With **Android 2.2.0 (code 33)**, a new installation offers the same initial
 steps as PC, once:
 
 1. Choose the **name** shown when you watch with friends, then select **Continue**.
@@ -447,7 +487,7 @@ reputation warning.
 
 ## Apple beta checks and limitations
 
-The guides, Windows 4.1.0, Android 2.1.0 and Mac 1.1.0 retain French / English support. iOS 1.1.0/build9 received limited manual acceptance on the test iPad on 2026-10-17: update with data preserved, Cinemeta New / Show titles, and the player actions actually listed in the release notes. Full automated iPhone/iPad suites are not qualified for this build. No additional physical iPhone acceptance is implied.
+The guides, Windows 4.2.0, Android 2.2.0 and Mac 1.1.0 retain French / English support. iOS 1.1.0/build9 received limited manual acceptance on the test iPad on 2026-10-17: update with data preserved, Cinemeta New / Show titles, and the player actions actually listed in the release notes. Full automated iPhone/iPad suites are not qualified for this build. No additional physical iPhone acceptance is implied.
 
 For iOS 0.1.0/build3, the test iPad passed update, design, film/episode playback
 and resume, integrated subtitles, controls hiding, library management, rooms,
