@@ -33,8 +33,8 @@ Un seul IPA convient à l’iPhone et à l’iPad, à partir d’iOS/iPadOS 17.0
 | Windows | **4.2.0** : [EXE Windows 64 bits](https://github.com/GabGaabS/gabio-release/releases/download/v4.2.0/Gabio-Setup-4.2.0.exe) · [Dernière version stable](https://github.com/GabGaabS/gabio-release/releases/latest) | Ouvrir l’installateur ; conserver l’installation existante pour une mise à jour. Installateur actuellement non signé. |
 | Android | **2.2.0 (code 33)** : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.2.0/Gabio-Android-2.2.0-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.2.0/Gabio-Android-2.2.0-universal.apk) | Autoriser l’installation depuis le navigateur utilisé, puis installer par-dessus Gabio. Certificat historique conservé. |
 | iPhone / iPad | [IPA 1.1.0, build 9](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/Gabio-iOS-1.1.0-unsigned.ipa) | [Guide AltStore](#installer-sur-iphone-ou-ipad) ; signature personnelle nécessaire. |
-| Mac Apple Silicon | [ZIP 1.1.0 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/Gabio-macOS-1.1.0-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
-| Mac Intel | [ZIP 1.1.0 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/Gabio-macOS-1.1.0-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
+| Mac Apple Silicon | [ZIP 1.2.0 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.2.0/Gabio-macOS-1.2.0-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
+| Mac Intel | [ZIP 1.2.0 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.2.0/Gabio-macOS-1.2.0-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 
 ## Choisir Français ou English
 
@@ -51,7 +51,7 @@ par les catalogues ne sont pas traduits par ce réglage.
 de Gabio → Français / English**. En anglais, le chemin est **Profile → Gabio
 language**. Le choix reste enregistré après fermeture et mise à jour.
 
-**Mac 1.1.0** propose Français / English : ouvrez **Paramètres → Langue de
+**Mac 1.2.0** propose Français / English : ouvrez **Paramètres → Langue de
 l’interface** (**Settings → Interface language** en anglais). Le choix reste
 enregistré après fermeture et mise à jour ; pendant la lecture, la vidéo,
 la position, les pistes, le volume et la calibration sont conservés.
@@ -385,24 +385,24 @@ les téléchargements en gardant l'app ouverte.
 
 ## Installer sur Mac
 
-**Gabio Mac 1.1.0 — préversion** : [notes de version](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.1.0) ·
-[empreintes SHA-256 des deux ZIP](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/SHA256SUMS-Apple.txt).
-Cette préversion Apple regroupe l’IPA iPhone/iPad 1.1.0/build9 et les deux ZIP Mac 1.1.0 retenus. La publication Mac indépendante macos-v1.1.0 déjà disponible reste conservée.
+**Gabio Mac 1.2.0 — préversion** : [notes de version](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.2.0) ·
+[empreintes SHA-256 des deux ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.2.0/SHA256SUMS-macOS.txt).
+Publication Mac séparée : ces ZIP 1.2.0 embarquent le socle PC 4.2. L’IPA iPhone/iPad public reste 1.1.0/build9 ; iOS 1.2.0/build10 attend un nouvel essai manuel sur l’iPad lorsque son utilisateur sera disponible.
 
 Vérifiez le nom du ZIP et son empreinte SHA-256 avant l’ouverture :
 
 | Fichier | SHA-256 |
 | --- | --- |
-| `Gabio-macOS-1.1.0-arm64.zip` | `e1e28d8b089285b9277d3042db798544290d15848b3b9f68443db8d983d7c0f1` |
-| `Gabio-macOS-1.1.0-x64.zip` | `83ebd1c3dcfcfdb5e231a98a54ce62478971611ffee50f4c5dd58dfe113326fd` |
+| `Gabio-macOS-1.2.0-arm64.zip` | `60838b556a157cb2f687a3cea77acbe0eee140d6c7efbff1074ce5fa7d2aaecb` |
+| `Gabio-macOS-1.2.0-x64.zip` | `15f0751611fc6241e5e8c92570484d8be1706d7d1d54b130ac2f4be131c90ef8` |
 
 
 ### 1. Choisir le bon téléchargement
 
 Dans **menu Apple  → À propos de ce Mac**, regardez le processeur :
 
-- Une **puce Apple M1, M2, M3, M4…** : [Gabio 1.1.0 Apple Silicon / ARM64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/Gabio-macOS-1.1.0-arm64.zip).
-- Un **processeur Intel** : [Gabio 1.1.0 Intel / x64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/Gabio-macOS-1.1.0-x64.zip).
+- Une **puce Apple M1, M2, M3, M4…** : [Gabio 1.2.0 Apple Silicon / ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.2.0/Gabio-macOS-1.2.0-arm64.zip).
+- Un **processeur Intel** : [Gabio 1.2.0 Intel / x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.2.0/Gabio-macOS-1.2.0-x64.zip).
 
 macOS **13 minimum**. Les ZIP Mac contiennent l’application Mac ; l’IPA sert
 uniquement aux iPhone et iPad. AltStore et un compte Apple ne sont pas nécessaires
@@ -429,7 +429,7 @@ concerne cette application. [Procédure officielle Apple](https://support.apple.
 </details>
 
 Si le message indique une archive/app endommagée, téléchargez de nouveau le ZIP
-et comparez son empreinte avec [SHA256SUMS-Apple.txt](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/SHA256SUMS-Apple.txt). Conservez le
+et comparez son empreinte avec [SHA256SUMS-macOS.txt](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.2.0/SHA256SUMS-macOS.txt). Conservez le
 message exact si le problème persiste ; ne modifiez pas les protections globales
 de macOS pour installer Gabio.
 
@@ -440,7 +440,7 @@ téléchargez le nouveau ZIP de votre architecture, quittez Gabio, extrayez-le
 puis remplacez seulement **Gabio.app** dans Applications. Gardez vos données
 Gabio et vos fichiers conservés ; leur suppression n’est pas nécessaire.
 
-Le canal Apple décrit ces téléchargements vérifiés. Mac compare seulement la version : une installation 1.1.0 ne considère pas les ZIP 1.1.0 retenus comme un nouveau build. Utilisez les liens directs de ce guide pour ces ZIP exacts ; l’installation reste manuelle.
+Le canal Apple commun et AltStore restent sur 1.1.0/build9. Le contrôle de mise à jour intégré au Mac lit ce canal commun et ne propose donc pas encore Mac 1.2.0. Utilisez les liens directs de ce guide ; l’installation reste manuelle.
 
 ### 4. Démarrer
 
@@ -459,7 +459,7 @@ de vos addons**, choisissez son catalogue, complétez les critères obligatoires
 puis cliquez sur **Afficher le catalogue**. **Afficher plus** charge la suite
 lorsque le fournisseur propose plusieurs pages.
 
-Mac 1.1.0 prend en compte les catalogues de films, séries et anime compatibles,
+Mac 1.2.0 prend en compte les catalogues de films, séries et anime compatibles,
 leurs filtres et recherches, les fiches et épisodes utilisant les identifiants
 propres à l’addon, ainsi que les sources et sous-titres qu’il fournit. Les pistes
 intégrées au fichier restent accessibles dans le lecteur. Quand un addon renvoie
@@ -476,6 +476,16 @@ son ajout ne garantit pas toutes les fonctions de son service. Les erreurs du
 fournisseur restent affichées ; tous les addons de la boutique n’ont pas été
 validés en lecture réelle. Les services protégés par DRM, les plateformes vidéo
 spécifiques et les formats spéciaux ne deviennent pas compatibles par ce seul ajout.
+
+### 6. Affiches Vu et filtre local sur Mac
+
+Mac 1.2.0 signale les films et séries déjà vus avec une coche et le texte **Vu**. **Masquer les déjà vus** est désactivé au départ, puis mémorisé sur cet appareil. Il agit sur la découverte, la recherche et les catalogues ; la bibliothèque reste accessible et une page entièrement masquée conserve sa pagination.
+
+Pour les films, la preuve peut venir de la bibliothèque terminée, de la progression achevée, du journal ou d’une note Letterboxd explicitement importée. Un épisode seul ne marque pas une série entière. Une note seule ne crée ni fausse date, ni visionnage, ni statistique. Les remakes et identités ambiguës restent séparés.
+
+Capture Mac 1.2.0 française du runner Intel, avec un profil fictif et les vrais composants du renderer ; aucune donnée utilisateur :
+
+<img src="assets/install/macos-watched-fr.png" alt="Mac 1.2 : badges Vu, filtre local et série partielle restant visible" width="800">
 
 <details>
 <summary>Capture Gabio : les paramètres sur Mac</summary>
@@ -504,14 +514,14 @@ modifié demandent un examen distinct d’une simple alerte de réputation.
 
 ## Vérification et limites de la bêta Apple
 
-Les guides, Windows 4.2.0, Android 2.2.0 et Mac 1.1.0 conservent Français / English. iOS 1.1.0/build9 a reçu une acceptation manuelle limitée sur l’iPad de test le 2026-10-17 : mise à jour avec données conservées, Cinemeta New / Afficher les titres et seules les actions du lecteur réellement détaillées dans les notes de version. Les suites automatisées complètes iPhone/iPad ne sont pas qualifiées pour ce build. Aucun essai physique supplémentaire sur iPhone n’en est déduit.
+Les guides, Windows 4.2.0, Android 2.2.0 et Mac 1.2.0 conservent Français / English. iOS 1.1.0/build9 a reçu une acceptation manuelle limitée sur l’iPad de test le 2026-10-17 : mise à jour avec données conservées, Cinemeta New / Afficher les titres et seules les actions du lecteur réellement détaillées dans les notes de version. Les suites automatisées complètes iPhone/iPad ne sont pas qualifiées pour ce build. Aucun essai physique supplémentaire sur iPhone n’en est déduit.
 
 Pour iOS 0.1.0/build3, l’iPad de test a validé mise à jour, design, films/épisodes
 et reprise, sous-titres intégrés, masquage des commandes, gestion de Ma liste,
 salle, télécommande et Sync. Ses quinze scénarios passent sur chaque famille
 de simulateur. Ces résultats historiques ne qualifient pas iOS 1.1.0/build9.
 
-Mac 1.1.0 passe les contrôles natifs sur deux hôtes macOS 15.7.9, Apple Silicon
+Mac 1.2.0 passe les contrôles natifs sur deux hôtes macOS 15.7.9, Apple Silicon
 et Intel : lecture, menus, hors connexion, plein écran, réduction/restauration,
 PiP et retour au lecteur depuis une autre application. La position et les pistes
 sont conservées pendant ces parcours, avec un profil de test et des vidéos
@@ -520,11 +530,11 @@ L’ouverture du ZIP téléchargé via Gatekeeper sur un Mac utilisateur reste �
 confirmer ; les téléviseurs, codecs HDR/audio multicanal et transferts prolongés
 conservent leurs limites de validation matérielle.
 
-Les limites sont détaillées dans les [notes Mac 1.1.0](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.1.0) et les
+Les limites sont détaillées dans les [notes Mac 1.2.0](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.2.0) et les
 [notes iOS 1.1.0/build9](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.1.0). Les bibliothèques natives
 et leurs licences accompagnent les applications.
 
 Téléchargez depuis ce dépôt public et comparez les
-[empreintes SHA-256 Mac 1.1.0](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/SHA256SUMS-Apple.txt) ou les
+[empreintes SHA-256 Mac 1.2.0](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.2.0/SHA256SUMS-macOS.txt) ou les
 [empreintes SHA-256 iOS 1.1.0](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/SHA256SUMS-Apple.txt).
 Windows et Android conservent leurs canaux séparés et Windows reste la release Latest globale. Le canal Apple et la source AltStore décrivent seulement cette préversion Apple vérifiée. Ce dépôt public contient les binaires, guides et métadonnées de téléchargement, sans sources applicatives, données ni diagnostics utilisateur.
