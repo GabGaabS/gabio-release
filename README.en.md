@@ -11,6 +11,7 @@ builds are prereleases. Application source code remains private.
 - [Choose French or English](#choose-french-or-english)
 - [See and hide watched titles](#see-and-hide-watched-titles)
 - [Prompt invitations and film credits](#prompt-invitations-and-film-credits)
+- [Choose episode downloads](#download-episodes-with-your-chosen-versions)
 - [Install and update on Windows](#install-on-windows)
 - [Install and update on Android](#install-on-android)
 - [First Android launch: name, addons and sync](#first-launch-on-android)
@@ -31,15 +32,15 @@ The same IPA supports both iPhone and iPad, starting with iOS/iPadOS 17.0.
 
 | Platform | Download | Installation |
 | --- | --- | --- |
-| Windows | **4.3.0**: [64-bit Windows EXE](https://github.com/GabGaabS/gabio-release/releases/download/v4.3.0/Gabio-Setup-4.3.0.exe) · [Latest stable release](https://github.com/GabGaabS/gabio-release/releases/latest) | Run the installer. Install updates over your existing app. The installer is currently unsigned. |
-| Android | **2.3.0 (code 34)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.3.0/Gabio-Android-2.3.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.3.0/Gabio-Android-2.3.0-universal.apk) | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
+| Windows | **4.4.1**: [64-bit Windows EXE](https://github.com/GabGaabS/gabio-release/releases/download/v4.4.1/Gabio-Setup-4.4.1.exe) · [Latest stable release](https://github.com/GabGaabS/gabio-release/releases/latest) | Run the installer. Install updates over your existing app. The installer is currently unsigned. |
+| Android | **2.4.0 (code 35)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.0/Gabio-Android-2.4.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.0/Gabio-Android-2.4.0-universal.apk) | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
 | iPhone / iPad | [IPA 1.1.0, build 9](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/Gabio-iOS-1.1.0-unsigned.ipa) | [AltStore guide](#install-on-iphone-or-ipad); personal signing is required. |
-| Apple Silicon Mac | [1.3.0 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.3.0/Gabio-macOS-1.3.0-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
-| Intel Mac | [1.3.0 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.3.0/Gabio-macOS-1.3.0-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
+| Apple Silicon Mac | [1.4.0 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/Gabio-macOS-1.4.0-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
+| Intel Mac | [1.4.0 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/Gabio-macOS-1.4.0-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 
 ## Choose French or English
 
-**Windows 4.3.0** supports both languages. Open **Paramètres → Langue de
+**Windows 4.4.1** supports both languages. Open **Paramètres → Langue de
 l’interface → Français / English** and select English. Once changed, the path
 is **Settings → Interface language**.
 
@@ -48,11 +49,11 @@ files are retained. Audio and subtitle languages have separate settings;
 catalogue titles, descriptions and track names keep the text provided by
 their source.
 
-**Android 2.3.0** also supports both languages. Open **Profil → Langue de
+**Android 2.4.0** also supports both languages. Open **Profil → Langue de
 Gabio → Français / English** and select English. The English path is **Profile
 → Gabio language**. The choice is retained after closing and updating the app.
 
-**Mac 1.3.0** supports French / English. Open **Settings → Interface
+**Mac 1.4.0** supports French / English. Open **Settings → Interface
 language** (**Paramètres → Langue de l’interface** with French selected).
 The choice is retained after closing and updating. Changing it during playback
 preserves the video, position, tracks, volume and calibration.
@@ -81,7 +82,7 @@ default profile shows no personal account or history.
 
 ## See and hide watched titles
 
-Available in **Windows 4.3.0** and **Android 2.3.0 (code 34)**.
+Available in **Windows 4.4.1** and **Android 2.4.0 (code 35)**.
 A **✓ Watched** check appears on a film’s poster when it is completed in
 Gabio, present in your diary, or identified by a personal Letterboxd rating
 you explicitly imported or synced. A rating saved only in Gabio is insufficient.
@@ -120,7 +121,7 @@ partially watched series stays visible. This screenshot is not a live catalogue.
 
 ## Prompt invitations and film credits
 
-**Windows 4.3.0, Android 2.3.0 and Mac 1.3.0** receive friend invitations and
+**Windows 4.4.1, Android 2.4.0 and Mac 1.4.0** receive friend invitations and
 requests over a dedicated connection, with automatic fallback. Keep Gabio open
 and connected. Notifications stay quiet and do not take focus; they are deferred
 while the player is full screen on PC and Mac. A suspended or closed mobile app
@@ -137,9 +138,52 @@ Checksums for the new installer and APKs:
 
 | File | SHA-256 |
 | --- | --- |
-| `Gabio-Setup-4.3.0.exe` | `07a84cacbb1ff77f7f4bbe09f95f8f6b64ae6dc5eba5f3595c172c404e03e20b` |
-| `Gabio-Android-2.3.0-arm64-v8a.apk` | `ffc027cd8c9e9b1a1955095060a0bd5a392457a85cbde58d077456339066ae24` |
-| `Gabio-Android-2.3.0-universal.apk` | `b1decb85e579d6866546e6f855f3b52ce21dd217cda9cd1ebaf960fc8c0de45f` |
+| `Gabio-Setup-4.4.1.exe` | `011c9840ef3c1213bd957162eed0d4494da7da4e3803f1c6775e3aa02b1588e2` |
+| `Gabio-Android-2.4.0-arm64-v8a.apk` | `f733c187981a08e0d9a55d8a34da92372d082231cb7f0406184e7120715d9963` |
+| `Gabio-Android-2.4.0-universal.apk` | `2112d93021ae006dcb8f0b9a125d1843aa2b63f23ff9d3aa8b2e752913d807ef` |
+
+## Download episodes with your chosen versions
+
+**Windows 4.4.1, Android 2.4.0 and Mac 1.4.0** let you prepare a batch before
+any transfer. Each episode keeps its own source; the first episode’s source is
+not reused for the others.
+
+1. **Windows / Mac**: open a series page, choose a season and select
+   **Download episodes**. **Android**: open the series and season, then
+   **Keep this season offline** and **Search sources**.
+2. Select episodes, then the provider, quality and announced size you want.
+   The initial mobile preference targets announced quality up to 1080p without
+   announced HDR. 4K and HDR remain explicit choices. Sort sizes or optionally
+   set an announced-size limit.
+3. Review each episode’s version, provider, announced quality and size, or
+   **unknown size**. **Change source** selects an actual version for that episode
+   without changing the others. A manual choice outside the preference remains
+   your choice; a missing source is never silently replaced by 4K/HDR.
+4. Choose or exclude any episode without a matching source. If several episodes
+   refer to the same recognized file, change a source or exclude an episode
+   before confirming. Different files in the same torrent remain possible when
+   their exact file indices are provided.
+5. Confirm, then follow transfers in **Downloads**. No item is added before the
+   final confirmation. Cancellation or a partial result keeps episodes already
+   added; retry the missing ones. Confirmed downloads retain their source and
+   resume data.
+
+**Limits: 50 episodes and 200 candidates per episode.** Addon searches remain
+bounded; changing the preference and searching again may find another version.
+A torrent must identify its exact video file; the batch never guesses an
+episode from the largest file.
+
+Quality, HDR and size are **provider declarations**. Only known sizes are added
+to the total; unknown sizes are counted separately. Unknown does not mean zero
+and cannot guarantee a size limit. The engine still checks the required space.
+Adaptive streams or sources requiring custom headers may remain unavailable
+for downloading.
+
+**iPhone/iPad: this new preparation belongs to candidate 1.4.0/build12, which is
+not public and still awaits a manual test.** In that candidate, use **series
+page → season → Prepare this season offline**, then set preferences and review
+sources. The public IPA and AltStore remain **1.1.0/build9**; the new controls
+are not promised in that IPA. Previously saved files remain in **My list → Downloads**.
 
 ## Install on Windows
 
@@ -189,8 +233,8 @@ French interface, captured using a test profile without personal data.
 ### First installation
 
 Android **8 or later** is required. Open the
-[Android 2.3.0 (code 34) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.3.0) on your phone/tablet.
-Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.3.0/Gabio-Android-2.3.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.3.0/Gabio-Android-2.3.0-universal.apk).
+[Android 2.4.0 (code 35) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.4.0) on your phone/tablet.
+Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.0/Gabio-Android-2.4.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.0/Gabio-Android-2.4.0-universal.apk).
 
 1. Download the **ARM64 APK** for most recent phones. If it is incompatible or you are unsure, use the larger **universal APK**. The x86/x64 builds mainly serve emulators.
 2. Open the APK from your browser’s downloads or a file manager.
@@ -211,7 +255,7 @@ diagnosis.
 
 ### First launch on Android
 
-With **Android 2.3.0 (code 34)**, a new installation offers the same initial
+With **Android 2.4.0 (code 35)**, a new installation offers the same initial
 steps as PC, once:
 
 1. Choose the **name** shown when you watch with friends, then select **Continue**.
@@ -394,24 +438,24 @@ downloads while keeping the app open. Keep the existing installation and account
 
 ## Install on Mac
 
-**Gabio Mac 1.3.0 — prerelease**: [release notes](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.3.0) ·
-[SHA-256 checksums for both ZIP files](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.3.0/SHA256SUMS-macOS.txt).
-Separate Mac release: these 1.3.0 ZIP files bundle PC base 4.3. The public iPhone/iPad IPA remains 1.1.0/build9; iOS 1.3.0/build11 awaits a new manual iPad test when its user is available.
+**Gabio Mac 1.4.0 — prerelease**: [release notes](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.4.0) ·
+[SHA-256 checksums for both ZIP files](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/SHA256SUMS-macOS.txt).
+Separate Mac release: these 1.4.0 ZIP files bundle PC base 4.4.1. The public iPhone/iPad IPA remains 1.1.0/build9; iOS 1.4.0/build12 awaits a new manual iPad test when its user is available.
 
 Check the ZIP filename and SHA-256 checksum before opening it:
 
 | File | SHA-256 |
 | --- | --- |
-| `Gabio-macOS-1.3.0-arm64.zip` | `1a10cc4009b4e084ca227320816cfda230154b3e42416a3ac248af2f060d998c` |
-| `Gabio-macOS-1.3.0-x64.zip` | `19d4883aaf26cadb7aa60809d000ebd612206eaa155536dc0278aa14c8d8f76f` |
+| `Gabio-macOS-1.4.0-arm64.zip` | `a66952d7869ab9c9a80f38266f1d087eb34007453bc698a5c7e3bb86bc079d0d` |
+| `Gabio-macOS-1.4.0-x64.zip` | `45f1f2c4af5389909840f4a98d85555655ef19ab78ba94512ab3b92502b6c07d` |
 
 
 ### 1. Choose your download
 
 Open **Apple menu  → About This Mac**:
 
-- **Apple chip M1, M2, M3, M4…**: [Gabio 1.3.0 Apple Silicon / ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.3.0/Gabio-macOS-1.3.0-arm64.zip).
-- **Intel processor**: [Gabio 1.3.0 Intel / x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.3.0/Gabio-macOS-1.3.0-x64.zip).
+- **Apple chip M1, M2, M3, M4…**: [Gabio 1.4.0 Apple Silicon / ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/Gabio-macOS-1.4.0-arm64.zip).
+- **Intel processor**: [Gabio 1.4.0 Intel / x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/Gabio-macOS-1.4.0-x64.zip).
 
 macOS **13 or later** is required. Mac ZIP files contain the desktop application;
 the IPA belongs to iPhone/iPad. Installing the Mac desktop app does not require
@@ -440,7 +484,7 @@ The reference screenshot uses French; **Ouvrir quand même** means **Open Anyway
 </details>
 
 For a damaged archive/app message, download the ZIP again and compare it with
-[SHA256SUMS-macOS.txt](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.3.0/SHA256SUMS-macOS.txt). Keep the exact message if it persists; do
+[SHA256SUMS-macOS.txt](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/SHA256SUMS-macOS.txt). Keep the exact message if it persists; do
 not disable macOS security globally.
 
 ### 3. Update on Mac
@@ -450,7 +494,7 @@ ZIP for your architecture, quit Gabio, extract it and replace only **Gabio.app**
 in Applications. Keep your Gabio data and saved files; deleting them is not
 necessary.
 
-The shared Apple channel and AltStore source remain on 1.1.0/build9. The built-in Mac updater reads that shared channel and does not offer Mac 1.3.0 yet. Use this guide’s direct ZIP links; installation remains manual.
+The shared Apple channel and AltStore source remain on 1.1.0/build9. The built-in Mac updater reads that shared channel and does not offer Mac 1.4.0 yet. Use this guide’s direct ZIP links; installation remains manual.
 
 ### 4. Start using Gabio
 
@@ -467,7 +511,7 @@ adding its configured manifest. In **Discover → Your addon catalogs**,
 choose its catalog, complete the required fields and click **Show catalog**.
 **Show more** loads the next page when the provider offers several pages.
 
-Mac 1.3.0 handles compatible movie, series and anime catalogs, their filters and
+Mac 1.4.0 handles compatible movie, series and anime catalogs, their filters and
 searches, metadata and episodes using the addon’s own identifiers, and the
 streams and subtitles it supplies. Tracks embedded in the file remain available
 in the player. When an addon returns an external playback website, Gabio offers
@@ -486,7 +530,7 @@ adding an addon.
 
 ### 6. Watched posters and the local filter on Mac
 
-Mac 1.3.0 marks watched films and series with a checkmark and **Watched**. **Hide watched titles** starts disabled and is remembered on this device. It filters discovery, search and catalogues; the library remains accessible and a fully hidden page retains its pagination.
+Mac 1.4.0 marks watched films and series with a checkmark and **Watched**. **Hide watched titles** starts disabled and is remembered on this device. It filters discovery, search and catalogues; the library remains accessible and a fully hidden page retains its pagination.
 
 Movies can use completed library status, completed playback, the journal or an explicitly imported Letterboxd rating. One episode never marks an entire series. A standalone rating invents no date, watch or statistics. Remakes and ambiguous identities stay separate.
 
@@ -521,12 +565,16 @@ reputation warning.
 
 ## Apple beta checks and limitations
 
-The guides, Windows 4.3.0, Android 2.3.0 and Mac 1.3.0 retain French / English support. iOS 1.1.0/build9 received limited manual acceptance on the test iPad on 2026-10-17: update with data preserved, Cinemeta New / Show titles, and the player actions actually listed in the release notes. Full automated iPhone/iPad suites are not qualified for this build. No additional physical iPhone acceptance is implied.
+The guides, Windows 4.4.1, Android 2.4.0 and Mac 1.4.0 retain French / English support. iOS 1.1.0/build9 received limited manual acceptance on the test iPad on 2026-10-17: update with data preserved, Cinemeta New / Show titles, and the player actions actually listed in the release notes. Full automated iPhone/iPad suites are not qualified for this build. No additional physical iPhone acceptance is implied.
 
 For iOS 0.1.0/build3, the test iPad passed update, design, film/episode playback
 and resume, integrated subtitles, controls hiding, library management, rooms,
 remote and Sync checks. Its fifteen scenarios pass on each simulator family.
 These historical results do not qualify iOS 1.1.0/build9.
+
+Mac 1.4.0 was checked on native Apple Silicon and Intel runners ([arm64](https://github.com/GabGaabS/gabio-release/actions/runs/39087275022) · [x64](https://github.com/GabGaabS/gabio-release/actions/runs/39087303800)). The AppKit/libVLC player and new episode-download dialog were exercised using synthetic profiles and videos. Application files in both ZIPs were compared with the pinned source. No new customer Mac or macOS 13 is qualified; Gatekeeper, TV, HDR/multichannel audio and long-transfer limitations still apply.
+
+**Historical Mac 1.3 qualification:**
 
 Mac 1.3.0 passes native checks on one Apple Silicon host and one Intel host:
 the actual AppKit/libVLC player, playback, menus, offline playback, full screen,
@@ -538,11 +586,11 @@ checked. Tests use synthetic profiles and videos. No new customer Mac or macOS 1
 is qualified; Gatekeeper when opening the downloaded ZIP, TVs, HDR/multichannel
 audio and long transfers retain their hardware-validation limits.
 
-Limits are described in the [Mac 1.3.0 notes](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.3.0) and
+Limits are described in the [Mac 1.4.0 notes](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.4.0) and
 [iOS 1.1.0/build9 notes](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.1.0). Native-library licences
 accompany the apps.
 
 Download from this public repository and check the
-[Mac 1.3.0 SHA-256 checksums](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.3.0/SHA256SUMS-macOS.txt) or the
+[Mac 1.4.0 SHA-256 checksums](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/SHA256SUMS-macOS.txt) or the
 [iOS 1.1.0 SHA-256 checksums](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/SHA256SUMS-Apple.txt).
 Windows and Android retain their separate channels and Windows remains the global Latest release. The Apple channel and AltStore source describe only this verified Apple prerelease. This public repository contains binaries, guides and download metadata, not application sources, user data or diagnostic logs.
