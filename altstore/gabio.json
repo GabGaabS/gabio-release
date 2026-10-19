@@ -17,6 +17,16 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.5.0",
+          "buildVersion": "14",
+          "marketingVersion": "1.5.0 (build 14)",
+          "date": "2026-10-19T20:52:26Z",
+          "localizedDescription": "Format de l’image et image dans l’image système sur iPhone/iPad. Accès direct à l’épisode suivant. / Image format and system Picture in Picture on iPhone/iPad. Jump straight to the next episode.",
+          "downloadURL": "https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.5.0/Gabio-iOS-1.5.0-unsigned.ipa",
+          "size": 83043741,
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "1.4.0",
           "buildVersion": "12",
           "marketingVersion": "1.4.0 (build 12)",

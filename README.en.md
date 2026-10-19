@@ -3,7 +3,7 @@
 [Guide d’installation en français](README.md)
 
 Gabio is available for Windows, Android, iPhone, iPad and Mac. **Android 2.4.0
-and iPhone/iPad 1.4.0 (build 12) are stable releases accepted by the user.**
+and iPhone/iPad 1.5.0 (build 14) are stable releases accepted by the user.**
 The standalone Mac 1.5.0 release remains a prerelease. Application source code stays private.
 
 ## Contents
@@ -25,22 +25,22 @@ The standalone Mac 1.5.0 release remains a prerelease. Application source code s
 
 ## Latest iPhone / iPad version
 
-**Gabio 1.4.0 — build 12**:
-[download the latest universal IPA, Gabio-iOS-1.4.0-unsigned.ipa](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.4.0/Gabio-iOS-1.4.0-unsigned.ipa).
+**Gabio 1.5.0 — build 14**:
+[download the latest universal IPA, Gabio-iOS-1.5.0-unsigned.ipa](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.5.0/Gabio-iOS-1.5.0-unsigned.ipa).
 The same IPA supports both iPhone and iPad, starting with iOS/iPadOS 17.0.
-The public file is **76 050 404 bytes**. SHA-256:
-`1e5e587e149e9417d1c1823e5af6e724f248b89cc2fe6b14405f6b2a8b140e7d`.
+The public file is **83 043 741 bytes**. SHA-256:
+`fdad58f2c616e0cf03b588573f889acd03fcd125c184c1412231cc599956d12b`.
 Update with the same Apple account over the existing app to retain your data.
 
 [Add Gabio to AltStore Classic](https://altstore.io/source/raw.githubusercontent.com/GabGaabS/gabio-release/main/altstore/gabio.json?app=io.gabio.apple) ·
-[iPhone/iPad 1.4.0 release notes](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.4.0) ·
-[SHA-256 checksums](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.4.0/SHA256SUMS-Apple.txt)
+[iPhone/iPad 1.5.0 release notes](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.5.0) ·
+[SHA-256 checksums](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.5.0/SHA256SUMS-Apple.txt)
 
 | Platform | Download | Installation |
 | --- | --- | --- |
 | Windows | **4.6.0**: [64-bit Windows EXE](https://github.com/GabGaabS/gabio-release/releases/download/v4.6.0/Gabio-Setup-4.6.0.exe) · [Latest stable release](https://github.com/GabGaabS/gabio-release/releases/latest) | Run the installer. Install updates over your existing app. The installer is currently unsigned. |
 | Android | **2.4.0 stable (code 35)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.0/Gabio-Android-2.4.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.0/Gabio-Android-2.4.0-universal.apk) | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
-| iPhone / iPad | [IPA 1.4.0, build 12](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.4.0/Gabio-iOS-1.4.0-unsigned.ipa) | [AltStore guide](#install-on-iphone-or-ipad); personal signing is required. |
+| iPhone / iPad | [IPA 1.5.0, build 14](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.5.0/Gabio-iOS-1.5.0-unsigned.ipa) | [AltStore guide](#install-on-iphone-or-ipad); personal signing is required. |
 | Apple Silicon Mac | [1.5.0 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/Gabio-macOS-1.5.0-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 | Intel Mac | [1.5.0 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/Gabio-macOS-1.5.0-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 
@@ -64,7 +64,7 @@ language** (**Paramètres → Langue de l’interface** with French selected).
 The choice is retained after closing and updating. Changing it during playback
 preserves the video, position, tracks, volume and calibration.
 
-**iPhone/iPad 1.4.0/build12** offers French / English through **Profile → App language**. Catalog titles, audio and subtitle languages remain separate.
+**iPhone/iPad 1.5.0/build14** offers French / English through **Profile → App language**. Catalog titles, audio and subtitle languages remain separate.
 
 <details>
 <summary>Gabio Windows 4.0 screenshot: choosing English</summary>
@@ -127,7 +127,7 @@ partially watched series stays visible. This screenshot is not a live catalogue.
 
 ## Prompt invitations and film credits
 
-**Windows 4.6.0, Android 2.4.0, iPhone/iPad 1.4.0 and Mac 1.5.0** receive friend invitations and
+**Windows 4.6.0, Android 2.4.0, iPhone/iPad 1.5.0 and Mac 1.5.0** receive friend invitations and
 requests over a dedicated connection, with automatic fallback. Keep Gabio open
 and connected. Notifications stay quiet and do not take focus; they are deferred
 while the player is full screen on PC and Mac. A suspended or closed mobile app
@@ -138,7 +138,7 @@ Cinemeta or your addon provides them. Provider names remain unchanged, and no
 additional request is made to obtain these credits. Previously cached details
 refresh once when next opened online; existing details and artwork remain
 available offline.
-These features are included in the public **iPhone/iPad 1.4.0/build12** IPA.
+These features are included in the public **iPhone/iPad 1.5.0/build14** IPA.
 
 Checksums for the new installer and APKs:
 
@@ -150,7 +150,7 @@ Checksums for the new installer and APKs:
 
 ## Download episodes with your chosen versions
 
-**Windows 4.6.0, Android 2.4.0, iPhone/iPad 1.4.0 and Mac 1.5.0** let you prepare a batch before
+**Windows 4.6.0, Android 2.4.0, iPhone/iPad 1.5.0 and Mac 1.5.0** let you prepare a batch before
 any transfer. Each episode keeps its own source; the first episode’s source is
 not reused for the others.
 
@@ -185,7 +185,7 @@ and cannot guarantee a size limit. The engine still checks the required space.
 Adaptive streams or sources requiring custom headers may remain unavailable
 for downloading.
 
-**iPhone/iPad 1.4.0/build12 is available in the public IPA and AltStore source.**
+**iPhone/iPad 1.5.0/build14 is available in the public IPA and AltStore source.**
 Use **series page → season → Prepare this season offline**, then set preferences
 and review each episode’s source. Existing files remain in **My list → Downloads**.
 
@@ -200,6 +200,11 @@ games. An exclusive full-screen game may hide the player.
 When rating a film during playback, the rating window remains
 accessible. Closing it returns the player to its previous windowed, full-screen
 or PiP mode.
+
+On **iPhone/iPad 1.5.0/build14**, use **Format** in the player to change the
+image framing, or **Picture in Picture** to keep watching outside Gabio.
+iOS controls the floating window size and position. **Next episode** opens
+the next episode when one is available.
 
 ## Timeline previews on Windows
 
@@ -406,7 +411,7 @@ Credit: 9to5Mac, via AltStore’s documentation.
 
 ### 3. Install Gabio manually if needed
 
-In Safari on your device, download [**Gabio-iOS-1.4.0-unsigned.ipa**](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.4.0/Gabio-iOS-1.4.0-unsigned.ipa) and keep it in
+In Safari on your device, download [**Gabio-iOS-1.5.0-unsigned.ipa**](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.5.0/Gabio-iOS-1.5.0-unsigned.ipa) and keep it in
 Files. In **AltStore Classic → My Apps → +**, select that IPA. AltServer must
 remain reachable over USB or the same Wi-Fi network. Launch Gabio after signing
 and installation. The Mac ZIP files cannot be installed on an iPhone/iPad.
@@ -446,7 +451,7 @@ running and USB/Wi-Fi is connected. [Troubleshooting](https://faq.altstore.io/al
 
 These official screenshots show older interfaces and are reference points.
 The historical AltStore installation/update check used the test iPad. The user
-has now accepted iPhone/iPad 1.4.0/build12; this does not replace the personal
+has now accepted iPhone/iPad 1.5.0/build14; this does not replace the personal
 signing steps above. Never send your Apple credentials through GitHub, Gabio or chat.
 
 ### Background transfers
@@ -467,7 +472,7 @@ downloads while keeping the app open. Keep the existing installation and account
 **Gabio Mac 1.5.0 — prerelease**: [release notes](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.5.0) ·
 [SHA-256 checksums for both ZIP files](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/SHA256SUMS-macOS.txt).
 These standalone Mac 1.5.0 ZIPs bundle PC base 4.5.0. Mac remains a prerelease.
-iPhone/iPad 1.4.0/build12 and Android 2.4.0 remain stable and unchanged.
+iPhone/iPad 1.5.0/build14 and Android 2.4.0 are stable.
 
 Check the ZIP filename and SHA-256 checksum before opening it:
 
@@ -521,11 +526,11 @@ ZIP for your architecture, quit Gabio, extract it and replace only **Gabio.app**
 in Applications. Keep your Gabio data and saved files; deleting them is not
 necessary.
 
-**Mac 1.5.0 is installed manually using the ZIP links above.** The shared Apple
-update channel remains **1.4.0**, including its Mac 1.4.0 ZIPs and iPhone/iPad
-1.4.0/build12 IPA. The built-in Mac update check therefore does not announce
-1.5.0 through that channel. AltStore remains on iPhone/iPad 1.4.0/build12;
-no mobile reinstallation is needed for this desktop update.
+**Mac 1.5.0 remains a prerelease with manual ZIP installation.** The Apple
+channel now lists iPhone/iPad 1.5.0/build14 and byte-identical copies of the
+already published Mac 1.5.0 ZIPs. Mac was not rebuilt or newly hardware-tested.
+A Mac already on 1.5.0 is up to date; the iOS build number does not apply to Mac.
+AltStore lists iPhone/iPad 1.5.0/build14.
 
 ### 4. Start using Gabio
 
@@ -596,10 +601,15 @@ reputation warning.
 
 ## Apple checks and limitations
 
-Android 2.4.0 and iPhone/iPad 1.4.0/build12 were accepted by the user and
-published as stable releases on 19 October 2026. Windows 4.6.0 remains the global
-Latest release; the standalone Mac 1.5.0 release remains a prerelease. All four
-apps and these guides offer French / English.
+Android 2.4.0 remains stable. iPhone/iPad 1.5.0/build14 is the new stable
+mobile release. Windows 4.6.0 remains global Latest; Mac 1.5.0 remains a prerelease.
+The iOS package was compiled and inspected locally. Its new engine is an
+official development snapshot of VLCKit 4.
+
+On the user’s iPad, the update retains existing data. Image format, direct next episode access, system PiP outside Gabio, pause/resume, return, audio/subtitle tracks, resume after reopening and stopping old playback after closing PiP or changing episode were manually confirmed.
+
+The prepared 25 iPhone/iPad UI cases were not executed. No new physical iPhone
+or Mac test is inferred from the package inspection or iPad observations.
 
 **Historical iOS 1.1.0/build9 qualification:** limited manual acceptance on the
 test iPad on 17 October 2026 covered updating with data retained, Cinemeta New /
@@ -635,15 +645,15 @@ is qualified; Gatekeeper when opening the downloaded ZIP, TVs, HDR/multichannel
 audio and long transfers retain their hardware-validation limits.
 
 Limits are described in the [Mac 1.5.0 notes](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.5.0) and
-[iOS 1.4.0/build12 notes](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.4.0). Native-library licences
+[iOS 1.5.0/build14 notes](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.5.0). Native-library licences
 accompany the apps.
 
 Download from this public repository and check the
 [Mac 1.5.0 SHA-256 checksums](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/SHA256SUMS-macOS.txt) or the
-[iOS 1.4.0 SHA-256 checksums](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.4.0/SHA256SUMS-Apple.txt).
-Windows and Android retain separate update channels, and Windows remains the
-global Latest release. The Apple channel remains 1.4.0 (iPhone/iPad 1.4.0/build12
-and Mac 1.4.0); AltStore lists the same stable mobile app. Mac 1.5.0 is a separate
-prerelease with manual ZIP installation. Personal iOS signing and Mac ad hoc
-signing without notarization remain unchanged. This public repository contains
-binaries, guides and download metadata, not app sources, user data or diagnostic logs.
+[iOS 1.5.0 SHA-256 checksums](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.5.0/SHA256SUMS-Apple.txt).
+Windows and Android retain separate update channels; Windows remains global
+Latest. The Apple channel and AltStore announce iPhone/iPad 1.5.0/build14.
+The Mac ZIPs retained for compatibility are identical to the existing 1.5.0
+prerelease, with its original source and qualification limits. Personal iOS
+signing and Mac ad hoc signing without notarization remain unchanged. This
+public repository contains no app sources, user data or diagnostic logs.
