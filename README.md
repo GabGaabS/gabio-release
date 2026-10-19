@@ -4,7 +4,7 @@
 
 Gabio est disponible sur Windows, Android, iPhone, iPad et Mac. **Android 2.4.0
 et iPhone/iPad 1.4.0 (build 12) sont des versions stables validées par l’utilisateur.**
-La version Mac 1.4.0 séparée reste en préversion. Les sources de l’application restent privées.
+La version Mac 1.5.0 séparée reste en préversion. Les sources de l’application restent privées.
 
 ## Sommaire
 
@@ -13,6 +13,8 @@ La version Mac 1.4.0 séparée reste en préversion. Les sources de l’applicat
 - [Voir et masquer les titres vus](#voir-et-masquer-les-titres-vus)
 - [Invitations rapides et crédits des films](#invitations-rapides-et-crédits-des-films)
 - [Choisir les téléchargements d’épisodes](#télécharger-des-épisodes-avec-les-versions-de-votre-choix)
+- [Petit lecteur PiP et notation](#petit-lecteur-pip-et-notation)
+- [Aperçus sur la barre de lecture Windows](#aperçus-sur-la-barre-de-lecture-windows)
 - [Installer et mettre à jour sur Windows](#installer-sur-windows)
 - [Installer et mettre à jour sur Android](#installer-sur-android)
 - [Premier lancement Android : nom, addons et synchronisation](#premier-lancement-sur-android)
@@ -36,15 +38,15 @@ Mettez à jour avec le même compte Apple, sur l’app existante, pour garder vo
 
 | Plateforme | Téléchargement | Installation |
 | --- | --- | --- |
-| Windows | **4.4.1** : [EXE Windows 64 bits](https://github.com/GabGaabS/gabio-release/releases/download/v4.4.1/Gabio-Setup-4.4.1.exe) · [Dernière version stable](https://github.com/GabGaabS/gabio-release/releases/latest) | Ouvrir l’installateur ; conserver l’installation existante pour une mise à jour. Installateur actuellement non signé. |
+| Windows | **4.6.0** : [EXE Windows 64 bits](https://github.com/GabGaabS/gabio-release/releases/download/v4.6.0/Gabio-Setup-4.6.0.exe) · [Dernière version stable](https://github.com/GabGaabS/gabio-release/releases/latest) | Ouvrir l’installateur ; conserver l’installation existante pour une mise à jour. Installateur actuellement non signé. |
 | Android | **2.4.0 stable (code 35)** : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.0/Gabio-Android-2.4.0-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.0/Gabio-Android-2.4.0-universal.apk) | Autoriser l’installation depuis le navigateur utilisé, puis installer par-dessus Gabio. Certificat historique conservé. |
 | iPhone / iPad | [IPA 1.4.0, build 12](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.4.0/Gabio-iOS-1.4.0-unsigned.ipa) | [Guide AltStore](#installer-sur-iphone-ou-ipad) ; signature personnelle nécessaire. |
-| Mac Apple Silicon | [ZIP 1.4.0 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/Gabio-macOS-1.4.0-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
-| Mac Intel | [ZIP 1.4.0 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/Gabio-macOS-1.4.0-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
+| Mac Apple Silicon | [ZIP 1.5.0 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/Gabio-macOS-1.5.0-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
+| Mac Intel | [ZIP 1.5.0 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/Gabio-macOS-1.5.0-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 
 ## Choisir Français ou English
 
-**Windows 4.4.1** propose les deux langues : ouvrez **Paramètres → Langue de
+**Windows 4.6.0** propose les deux langues : ouvrez **Paramètres → Langue de
 l’interface → Français / English**, puis choisissez votre langue. En anglais,
 le chemin est **Settings → Interface language**.
 
@@ -57,7 +59,7 @@ par les catalogues ne sont pas traduits par ce réglage.
 de Gabio → Français / English**. En anglais, le chemin est **Profile → Gabio
 language**. Le choix reste enregistré après fermeture et mise à jour.
 
-**Mac 1.4.0** propose Français / English : ouvrez **Paramètres → Langue de
+**Mac 1.5.0** propose Français / English : ouvrez **Paramètres → Langue de
 l’interface** (**Settings → Interface language** en anglais). Le choix reste
 enregistré après fermeture et mise à jour ; pendant la lecture, la vidéo,
 la position, les pistes, le volume et la calibration sont conservés.
@@ -86,7 +88,7 @@ par défaut ne montre aucun compte ni historique personnel.
 
 ## Voir et masquer les titres vus
 
-Disponible avec **Windows 4.4.1** et **Android 2.4.0 (code 35)**.
+Disponible avec **Windows 4.6.0** et **Android 2.4.0 (code 35)**.
 Une coche **✓ Vu** apparaît sur l’affiche d’un film terminé dans Gabio,
 présent dans votre journal ou repéré grâce à une note personnelle Letterboxd
 explicitement importée ou synchronisée. Une note saisie seulement dans Gabio
@@ -126,7 +128,7 @@ La série partielle reste visible. Cette capture ne représente pas un catalogue
 
 ## Invitations rapides et crédits des films
 
-**Windows 4.4.1, Android 2.4.0, iPhone/iPad 1.4.0 et Mac 1.4.0** reçoivent les invitations et
+**Windows 4.6.0, Android 2.4.0, iPhone/iPad 1.4.0 et Mac 1.5.0** reçoivent les invitations et
 demandes d’amis via une connexion dédiée, avec récupération automatique en
 secours. Gardez Gabio ouvert et connecté. Les notifications restent silencieuses
 et ne prennent pas le focus ; elles sont différées pendant le plein écran du
@@ -144,13 +146,13 @@ Empreintes des nouveaux installateurs et APK :
 
 | Fichier | SHA-256 |
 | --- | --- |
-| `Gabio-Setup-4.4.1.exe` | `011c9840ef3c1213bd957162eed0d4494da7da4e3803f1c6775e3aa02b1588e2` |
+| `Gabio-Setup-4.6.0.exe` | `7322006f43437a83e8c0b3f51902c3eee11382f0ba3bff7774f037fc6256281d` |
 | `Gabio-Android-2.4.0-arm64-v8a.apk` | `f733c187981a08e0d9a55d8a34da92372d082231cb7f0406184e7120715d9963` |
 | `Gabio-Android-2.4.0-universal.apk` | `2112d93021ae006dcb8f0b9a125d1843aa2b63f23ff9d3aa8b2e752913d807ef` |
 
 ## Télécharger des épisodes avec les versions de votre choix
 
-**Windows 4.4.1, Android 2.4.0, iPhone/iPad 1.4.0 et Mac 1.4.0** permettent de préparer un lot
+**Windows 4.6.0, Android 2.4.0, iPhone/iPad 1.4.0 et Mac 1.5.0** permettent de préparer un lot
 avant tout transfert. Chaque épisode garde sa propre source ; celle du premier
 épisode n’est pas réutilisée pour les suivants.
 
@@ -190,6 +192,26 @@ des en-têtes particuliers peuvent rester indisponibles en téléchargement.
 Ouvrez **fiche de série → saison → Préparer cette saison hors connexion**, puis
 choisissez la préférence et vérifiez la source de chaque épisode. Les anciens
 fichiers restent accessibles dans **Ma liste → Téléchargements**.
+
+## Petit lecteur PiP et notation
+
+Sur **Windows 4.6.0 et Mac 1.5.0**, ouvrez le menu du petit lecteur pour choisir
+**Petite, Moyenne ou Grande** et l’un des **quatre coins de l’écran**. Vous pouvez
+aussi glisser un bord pour le redimensionner ou déplacer la fenêtre. Sur PC,
+activez l’épingle **Toujours au-dessus** pour garder la vidéo devant les autres
+fenêtres, notamment un jeu en mode fenêtré ou sans bordure. Un jeu en plein écran
+exclusif peut cacher le lecteur.
+
+Lors de la notation d’un film pendant la lecture, la fenêtre de
+notation reste accessible. Sa fermeture rétablit le mode précédent du lecteur :
+fenêtre, plein écran ou PiP.
+
+## Aperçus sur la barre de lecture Windows
+
+Dans **Paramètres → Lecture vidéo**, activez **Miniatures au survol de la
+barre de lecture** pour voir un aperçu en passant sur la barre. Les aperçus
+utilisent uniquement les portions déjà disponibles sur ce PC. Si le cache
+ou le format ne permet pas d’afficher une image, le temps reste affiché.
 
 ## Installer sur Windows
 
@@ -462,26 +484,25 @@ les téléchargements en gardant l'app ouverte.
 
 ## Installer sur Mac
 
-**Gabio Mac 1.4.0 — préversion** : [notes de version](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.4.0) ·
-[empreintes SHA-256 des deux ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/SHA256SUMS-macOS.txt).
-Ces ZIP Mac 1.4.0 embarquent le socle PC 4.4.1 et sont également présents,
-identiques, dans la release Apple 1.4.0 commune. L’IPA iPhone/iPad 1.4.0/build12
-est stable ; la release Mac séparée reste en préversion.
+**Gabio Mac 1.5.0 — préversion** : [notes de version](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.5.0) ·
+[empreintes SHA-256 des deux ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/SHA256SUMS-macOS.txt).
+Ces ZIP Mac 1.5.0 séparés embarquent le socle PC 4.5.0. Mac reste en préversion.
+iPhone/iPad 1.4.0/build12 et Android 2.4.0 restent stables et inchangés.
 
 Vérifiez le nom du ZIP et son empreinte SHA-256 avant l’ouverture :
 
 | Fichier | SHA-256 |
 | --- | --- |
-| `Gabio-macOS-1.4.0-arm64.zip` | `a66952d7869ab9c9a80f38266f1d087eb34007453bc698a5c7e3bb86bc079d0d` |
-| `Gabio-macOS-1.4.0-x64.zip` | `45f1f2c4af5389909840f4a98d85555655ef19ab78ba94512ab3b92502b6c07d` |
+| `Gabio-macOS-1.5.0-arm64.zip` | `5fac028966436cc3801c94a0eff66f39e477b9bd38bff72f3b44ef31a86d3888` |
+| `Gabio-macOS-1.5.0-x64.zip` | `2159dd88c62fb2ceda52173c7bcb2c419ee1d9901292b9aea47b5c942c6c7bfd` |
 
 
 ### 1. Choisir le bon téléchargement
 
 Dans **menu Apple  → À propos de ce Mac**, regardez le processeur :
 
-- Une **puce Apple M1, M2, M3, M4…** : [Gabio 1.4.0 Apple Silicon / ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/Gabio-macOS-1.4.0-arm64.zip).
-- Un **processeur Intel** : [Gabio 1.4.0 Intel / x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/Gabio-macOS-1.4.0-x64.zip).
+- Une **puce Apple M1, M2, M3, M4…** : [Gabio 1.5.0 Apple Silicon / ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/Gabio-macOS-1.5.0-arm64.zip).
+- Un **processeur Intel** : [Gabio 1.5.0 Intel / x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/Gabio-macOS-1.5.0-x64.zip).
 
 macOS **13 minimum**. Les ZIP Mac contiennent l’application Mac ; l’IPA sert
 uniquement aux iPhone et iPad. AltStore et un compte Apple ne sont pas nécessaires
@@ -508,7 +529,7 @@ concerne cette application. [Procédure officielle Apple](https://support.apple.
 </details>
 
 Si le message indique une archive/app endommagée, téléchargez de nouveau le ZIP
-et comparez son empreinte avec [SHA256SUMS-macOS.txt](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/SHA256SUMS-macOS.txt). Conservez le
+et comparez son empreinte avec [SHA256SUMS-macOS.txt](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/SHA256SUMS-macOS.txt). Conservez le
 message exact si le problème persiste ; ne modifiez pas les protections globales
 de macOS pour installer Gabio.
 
@@ -519,12 +540,11 @@ téléchargez le nouveau ZIP de votre architecture, quittez Gabio, extrayez-le
 puis remplacez seulement **Gabio.app** dans Applications. Gardez vos données
 Gabio et vos fichiers conservés ; leur suppression n’est pas nécessaire.
 
-Le canal Apple commun est maintenant en **1.4.0**. Gabio Mac peut annoncer
-cette version si une version plus ancienne est installée et ouvrir la page de
-téléchargement ; il n’installe pas le ZIP silencieusement. AltStore propose
-**iPhone/iPad 1.4.0/build12** et concerne uniquement l’app mobile. Les ZIP Mac de
-la release Apple et de la préversion Mac séparée sont identiques : un Mac déjà
-en 1.4.0 n’a pas besoin d’être réinstallé.
+**Mac 1.5.0 s’installe manuellement avec les ZIP ci-dessus.** Le canal de mise à
+jour Apple commun reste en **1.4.0**, avec ses ZIP Mac 1.4.0 et l’IPA iPhone/iPad
+1.4.0/build12. Le contrôle intégré du Mac ne signale donc pas 1.5.0 via ce canal.
+AltStore reste sur iPhone/iPad 1.4.0/build12 ; cette mise à jour des apps de bureau
+ne demande aucune réinstallation mobile.
 
 ### 4. Démarrer
 
@@ -543,7 +563,7 @@ de vos addons**, choisissez son catalogue, complétez les critères obligatoires
 puis cliquez sur **Afficher le catalogue**. **Afficher plus** charge la suite
 lorsque le fournisseur propose plusieurs pages.
 
-Mac 1.4.0 prend en compte les catalogues de films, séries et anime compatibles,
+Mac 1.5.0 prend en compte les catalogues de films, séries et anime compatibles,
 leurs filtres et recherches, les fiches et épisodes utilisant les identifiants
 propres à l’addon, ainsi que les sources et sous-titres qu’il fournit. Les pistes
 intégrées au fichier restent accessibles dans le lecteur. Quand un addon renvoie
@@ -563,7 +583,7 @@ spécifiques et les formats spéciaux ne deviennent pas compatibles par ce seul 
 
 ### 6. Affiches Vu et filtre local sur Mac
 
-Mac 1.4.0 signale les films et séries déjà vus avec une coche et le texte **Vu**. **Masquer les déjà vus** est désactivé au départ, puis mémorisé sur cet appareil. Il agit sur la découverte, la recherche et les catalogues ; la bibliothèque reste accessible et une page entièrement masquée conserve sa pagination.
+Mac 1.5.0 signale les films et séries déjà vus avec une coche et le texte **Vu**. **Masquer les déjà vus** est désactivé au départ, puis mémorisé sur cet appareil. Il agit sur la découverte, la recherche et les catalogues ; la bibliothèque reste accessible et une page entièrement masquée conserve sa pagination.
 
 Pour les films, la preuve peut venir de la bibliothèque terminée, de la progression achevée, du journal ou d’une note Letterboxd explicitement importée. Un épisode seul ne marque pas une série entière. Une note seule ne crée ni fausse date, ni visionnage, ni statistique. Les remakes et identités ambiguës restent séparés.
 
@@ -599,8 +619,8 @@ modifié demandent un examen distinct d’une simple alerte de réputation.
 ## Validation et limites Apple
 
 Android 2.4.0 et iPhone/iPad 1.4.0/build12 ont été validés par l’utilisateur et
-publiés en versions stables le 19 octobre 2026. Windows 4.4.1 reste la release
-Latest globale ; la release Mac 1.4.0 séparée reste en préversion. Les quatre
+publiés en versions stables le 19 octobre 2026. Windows 4.6.0 reste la release
+Latest globale ; la release Mac 1.5.0 séparée reste en préversion. Les quatre
 applications et ces guides proposent Français / English.
 
 **Qualification historique d’iOS 1.1.0/build9 :** l’acceptation manuelle limitée
@@ -614,6 +634,15 @@ Pour iOS 0.1.0/build3, l’iPad de test a validé mise à jour, design, films/é
 et reprise, sous-titres intégrés, masquage des commandes, gestion de Ma liste,
 salle, télécommande et Sync. Ses quinze scénarios passent sur chaque famille
 de simulateur. Ces résultats historiques ne qualifient pas iOS 1.1.0/build9.
+
+Mac 1.5.0 a été contrôlé sur des runners natifs [Apple Silicon](https://github.com/GabGaabS/gabio-release/actions/runs/39289264699)
+et [Intel](https://github.com/GabGaabS/gabio-release/actions/runs/39289353960) avant publication.
+Les commandes PiP et le retour depuis la fenêtre de notation ont été exécutés
+avec des profils et vidéos synthétiques. Cela ne qualifie ni les jeux en plein
+écran exclusif ni un nouveau Mac utilisateur ; les limites de signature et de
+matériel ci-dessous demeurent.
+
+**Qualification historique de Mac 1.4 :**
 
 Mac 1.4.0 a été contrôlé sur deux runners natifs, Apple Silicon et Intel ([arm64](https://github.com/GabGaabS/gabio-release/actions/runs/39087275022) · [x64](https://github.com/GabGaabS/gabio-release/actions/runs/39087303800)). Le lecteur AppKit/libVLC et le nouveau dialogue de téléchargements d’épisodes ont été exécutés avec des profils et vidéos synthétiques. Les fichiers applicatifs des deux ZIP ont été comparés à la source de référence. Aucun nouveau Mac utilisateur ni macOS 13 n’est qualifié ; les limites Gatekeeper, TV, HDR/audio multicanal et transferts prolongés restent applicables.
 
@@ -631,16 +660,17 @@ qualifié ; Gatekeeper à l’ouverture du ZIP téléchargé, les téléviseurs,
 les codecs HDR/audio multicanal et les transferts prolongés conservent
 leurs limites de validation matérielle.
 
-Les limites sont détaillées dans les [notes Mac 1.4.0](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.4.0) et les
+Les limites sont détaillées dans les [notes Mac 1.5.0](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.5.0) et les
 [notes iOS 1.4.0/build12](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.4.0). Les bibliothèques natives
 et leurs licences accompagnent les applications.
 
 Téléchargez depuis ce dépôt public et comparez les
-[empreintes SHA-256 Mac 1.4.0](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.4.0/SHA256SUMS-macOS.txt) ou les
+[empreintes SHA-256 Mac 1.5.0](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/SHA256SUMS-macOS.txt) ou les
 [empreintes SHA-256 iOS 1.4.0](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.4.0/SHA256SUMS-Apple.txt).
 Windows et Android conservent leurs canaux séparés et Windows reste la release
-Latest globale. Le canal Apple décrit iPhone/iPad 1.4.0/build12 et les ZIP Mac
-1.4.0 identiques ; AltStore référence l’app iPhone/iPad. Le statut stable mobile
-ne change ni la préversion Mac séparée, ni la signature personnelle iOS, ni la
-signature ad hoc Mac sans notarisation. Ce dépôt public contient les binaires,
-guides et métadonnées de téléchargement, sans sources applicatives, données ni diagnostics utilisateur.
+Latest globale. Le canal Apple reste en 1.4.0 (iPhone/iPad 1.4.0/build12 et Mac
+1.4.0) ; AltStore référence la même app mobile stable. Mac 1.5.0 est une préversion
+séparée à installer manuellement depuis son ZIP. La signature personnelle iOS
+et la signature ad hoc Mac sans notarisation restent nécessaires. Ce dépôt public
+contient les binaires, guides et métadonnées de téléchargement, sans sources
+applicatives, données ni diagnostics utilisateur.
