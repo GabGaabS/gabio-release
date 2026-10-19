@@ -1,5 +1,5 @@
 {
-  "name": "Gabio — bêta iPhone/iPad",
+  "name": "Gabio — iPhone/iPad",
   "subtitle": "Le même Gabio sur vos appareils.",
   "description": "Source officielle Gabio pour AltStore Classic. Signature personnelle avec AltServer ; compte Apple gratuit accepté.",
   "website": "https://github.com/GabGaabS/gabio-release#installer-sur-iphone-ou-ipad",
@@ -11,11 +11,21 @@
       "bundleIdentifier": "io.gabio.apple",
       "developerName": "GabGaabS",
       "subtitle": "Films, séries et séances ensemble.",
-      "localizedDescription": "Gabio pour iPhone et iPad : catalogues et addons configurables, lecteur VLC, reprise par épisode, vidéos conservées, bibliothèque, synchronisation, salles et télécommande. Bêta expérimentale ; voir le README pour les limites et le guide complet.",
+      "localizedDescription": "Gabio pour iPhone et iPad : catalogues et addons configurables, lecteur VLC, reprise par épisode, vidéos conservées, bibliothèque, synchronisation, salles et télécommande. Voir le README pour les limites et le guide complet.",
       "iconURL": "https://raw.githubusercontent.com/GabGaabS/gabio-release/main/assets/gabio-ios.png",
       "tintColor": "#A3EFDE",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "1.4.0",
+          "buildVersion": "12",
+          "marketingVersion": "1.4.0 (build 12)",
+          "date": "2026-10-19T09:29:41Z",
+          "localizedDescription": "Téléchargements d’épisodes : choix de source, qualité et taille. Badges Vu, invitations plus rapides, réalisateur et acteurs. / Episode downloads: source, quality and size selection. Watched badges, faster invitations, director and cast.",
+          "downloadURL": "https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.4.0/Gabio-iOS-1.4.0-unsigned.ipa",
+          "size": 76050404,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.1.0",
           "buildVersion": "9",
