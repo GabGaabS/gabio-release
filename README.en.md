@@ -2,8 +2,8 @@
 
 [Guide d’installation en français](README.md)
 
-Gabio is available for Windows, Android, iPhone, iPad and Mac. **Android 2.4.0
-and iPhone/iPad 1.5.0 (build 14) are stable releases accepted by the user.**
+Gabio is available for Windows, Android, iPhone, iPad and Mac. **Android 2.4.1
+and iPhone/iPad 1.5.0 (build 14) are stable releases.**
 The standalone Mac 1.5.0 release remains a prerelease. Application source code stays private.
 
 ## Contents
@@ -39,10 +39,12 @@ Update with the same Apple account over the existing app to retain your data.
 | Platform | Download | Installation |
 | --- | --- | --- |
 | Windows | **4.6.0**: [64-bit Windows EXE](https://github.com/GabGaabS/gabio-release/releases/download/v4.6.0/Gabio-Setup-4.6.0.exe) · [Latest stable release](https://github.com/GabGaabS/gabio-release/releases/latest) | Run the installer. Install updates over your existing app. The installer is currently unsigned. |
-| Android | **2.4.0 stable (code 35)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.0/Gabio-Android-2.4.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.0/Gabio-Android-2.4.0-universal.apk) | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
+| Android | **2.4.1 stable (code 36)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.1/Gabio-Android-2.4.1-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.1/Gabio-Android-2.4.1-universal.apk) | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
 | iPhone / iPad | [IPA 1.5.0, build 14](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.5.0/Gabio-iOS-1.5.0-unsigned.ipa) | [AltStore guide](#install-on-iphone-or-ipad); personal signing is required. |
 | Apple Silicon Mac | [1.5.0 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/Gabio-macOS-1.5.0-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 | Intel Mac | [1.5.0 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/Gabio-macOS-1.5.0-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
+
+Android 2.4.1 fixes some DLNA container-type rejections and the French cast Pause command. Stable publication was requested before testing the reported Samsung TV; casting subtitle selection remains unresolved.
 
 ## Choose French or English
 
@@ -55,7 +57,7 @@ files are retained. Audio and subtitle languages have separate settings;
 catalogue titles, descriptions and track names keep the text provided by
 their source.
 
-**Android 2.4.0** also supports both languages. Open **Profil → Langue de
+**Android 2.4.1** also supports both languages. Open **Profil → Langue de
 Gabio → Français / English** and select English. The English path is **Profile
 → Gabio language**. The choice is retained after closing and updating the app.
 
@@ -88,7 +90,7 @@ default profile shows no personal account or history.
 
 ## See and hide watched titles
 
-Available in **Windows 4.6.0** and **Android 2.4.0 (code 35)**.
+Available in **Windows 4.6.0** and **Android 2.4.1 (code 36)**.
 A **✓ Watched** check appears on a film’s poster when it is completed in
 Gabio, present in your diary, or identified by a personal Letterboxd rating
 you explicitly imported or synced. A rating saved only in Gabio is insufficient.
@@ -127,7 +129,7 @@ partially watched series stays visible. This screenshot is not a live catalogue.
 
 ## Prompt invitations and film credits
 
-**Windows 4.6.0, Android 2.4.0, iPhone/iPad 1.5.0 and Mac 1.5.0** receive friend invitations and
+**Windows 4.6.0, Android 2.4.1, iPhone/iPad 1.5.0 and Mac 1.5.0** receive friend invitations and
 requests over a dedicated connection, with automatic fallback. Keep Gabio open
 and connected. Notifications stay quiet and do not take focus; they are deferred
 while the player is full screen on PC and Mac. A suspended or closed mobile app
@@ -145,12 +147,12 @@ Checksums for the new installer and APKs:
 | File | SHA-256 |
 | --- | --- |
 | `Gabio-Setup-4.6.0.exe` | `7322006f43437a83e8c0b3f51902c3eee11382f0ba3bff7774f037fc6256281d` |
-| `Gabio-Android-2.4.0-arm64-v8a.apk` | `f733c187981a08e0d9a55d8a34da92372d082231cb7f0406184e7120715d9963` |
-| `Gabio-Android-2.4.0-universal.apk` | `2112d93021ae006dcb8f0b9a125d1843aa2b63f23ff9d3aa8b2e752913d807ef` |
+| `Gabio-Android-2.4.1-arm64-v8a.apk` | `4280398ff04ba6d18c4b816004f8be752807426b2faa5906240b929f906e1293` |
+| `Gabio-Android-2.4.1-universal.apk` | `9fa873bad73ff9bd4dd0d735791d545e27c10aa3adae3c7c421c36125062b618` |
 
 ## Download episodes with your chosen versions
 
-**Windows 4.6.0, Android 2.4.0, iPhone/iPad 1.5.0 and Mac 1.5.0** let you prepare a batch before
+**Windows 4.6.0, Android 2.4.1, iPhone/iPad 1.5.0 and Mac 1.5.0** let you prepare a batch before
 any transfer. Each episode keeps its own source; the first episode’s source is
 not reused for the others.
 
@@ -261,8 +263,8 @@ French interface, captured using a test profile without personal data.
 ### First installation
 
 Android **8 or later** is required. Open the
-[Android 2.4.0 (code 35) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.4.0) on your phone/tablet.
-Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.0/Gabio-Android-2.4.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.0/Gabio-Android-2.4.0-universal.apk).
+[Android 2.4.1 (code 36) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.4.1) on your phone/tablet.
+Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.1/Gabio-Android-2.4.1-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.4.1/Gabio-Android-2.4.1-universal.apk).
 
 1. Download the **ARM64 APK** for most recent phones. If it is incompatible or you are unsure, use the larger **universal APK**. The x86/x64 builds mainly serve emulators.
 2. Open the APK from your browser’s downloads or a file manager.
@@ -283,7 +285,7 @@ diagnosis.
 
 ### First launch on Android
 
-With **Android 2.4.0 (code 35)**, a new installation offers the same initial
+With **Android 2.4.1 (code 36)**, a new installation offers the same initial
 steps as PC, once:
 
 1. Choose the **name** shown when you watch with friends, then select **Continue**.
@@ -472,7 +474,7 @@ downloads while keeping the app open. Keep the existing installation and account
 **Gabio Mac 1.5.0 — prerelease**: [release notes](https://github.com/GabGaabS/gabio-release/releases/tag/macos-v1.5.0) ·
 [SHA-256 checksums for both ZIP files](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/SHA256SUMS-macOS.txt).
 These standalone Mac 1.5.0 ZIPs bundle PC base 4.5.0. Mac remains a prerelease.
-iPhone/iPad 1.5.0/build14 and Android 2.4.0 are stable.
+iPhone/iPad 1.5.0/build14 and Android 2.4.1 are stable.
 
 Check the ZIP filename and SHA-256 checksum before opening it:
 
@@ -601,7 +603,7 @@ reputation warning.
 
 ## Apple checks and limitations
 
-Android 2.4.0 remains stable. iPhone/iPad 1.5.0/build14 is the new stable
+Android 2.4.1 remains stable. iPhone/iPad 1.5.0/build14 is the new stable
 mobile release. Windows 4.6.0 remains global Latest; Mac 1.5.0 remains a prerelease.
 The iOS package was compiled and inspected locally. Its new engine is an
 official development snapshot of VLCKit 4.
