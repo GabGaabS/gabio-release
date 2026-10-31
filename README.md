@@ -44,7 +44,7 @@ Mettez à jour avec le même compte Apple, sur l’app existante, pour garder vo
 | Mac Apple Silicon | [ZIP 1.5.0 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/Gabio-macOS-1.5.0-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 | Mac Intel | [ZIP 1.5.0 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/Gabio-macOS-1.5.0-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 
-Android 2.4.1 corrige certains refus de format DLNA et la commande Pause en français. Publication finale demandée avant le test sur la TV Samsung signalée ; les sous-titres en diffusion restent à traiter.
+Android 2.4.1 corrige certains refus de format DLNA et fiabilise la commande Pause pendant la diffusion. Publication finale demandée avant le test sur la TV Samsung signalée ; les sous-titres en diffusion restent à traiter.
 
 ## Choisir Français ou English
 

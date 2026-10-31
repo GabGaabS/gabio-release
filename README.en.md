@@ -44,7 +44,7 @@ Update with the same Apple account over the existing app to retain your data.
 | Apple Silicon Mac | [1.5.0 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/Gabio-macOS-1.5.0-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 | Intel Mac | [1.5.0 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/macos-v1.5.0/Gabio-macOS-1.5.0-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 
-Android 2.4.1 fixes some DLNA container-type rejections and the French cast Pause command. Stable publication was requested before testing the reported Samsung TV; casting subtitle selection remains unresolved.
+Android 2.4.1 fixes some DLNA container-type rejections and keeps cast Pause independent of the interface language. Stable publication was requested before testing the reported Samsung TV; casting subtitle selection remains unresolved.
 
 ## Choose French or English
 
