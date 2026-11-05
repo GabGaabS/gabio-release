@@ -1,6 +1,6 @@
 {
-  "versionName": "2.4.1",
-  "versionCode": 36,
-  "stable": true,
-  "releaseUrl": "https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.4.1"
+  "versionName": "2.5.0",
+  "versionCode": 37,
+  "stable": false,
+  "releaseUrl": "https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.5.0"
 }
