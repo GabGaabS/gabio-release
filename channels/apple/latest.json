@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "version": "1.6.0",
-  "tag": "apple-v1.6.0",
-  "publishedAt": "2026-11-05T22:14:31Z",
+  "version": "1.6.1",
+  "tag": "apple-v1.6.1",
+  "publishedAt": "2026-11-11T01:27:38Z",
   "prerelease": true,
   "assets": {
     "ios": {
-      "name": "Gabio-iOS-1.6.0-unsigned.ipa",
-      "size": 31867775,
-      "sha256": "ee48364b9b27cf73194f982aa3f0b2337be23224fcd07bb8578f4ec537226f12",
-      "url": "https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-iOS-1.6.0-unsigned.ipa",
-      "build": 15
+      "name": "Gabio-iOS-1.6.1-unsigned.ipa",
+      "size": 85789372,
+      "sha256": "e77e517e76401da7bd3e053bf427b386ada097924cfaf0ec475bc274f70b0466",
+      "url": "https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/Gabio-iOS-1.6.1-unsigned.ipa",
+      "build": 16
     },
     "macArm64": {
-      "name": "Gabio-macOS-1.6.0-arm64.zip",
-      "size": 241066733,
-      "sha256": "08d67f11c5744f8d2144e835ce377d6794a98a2e550480e9f71e0085a10e93bb",
-      "url": "https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-macOS-1.6.0-arm64.zip"
+      "name": "Gabio-macOS-1.6.1-arm64.zip",
+      "size": 241792013,
+      "sha256": "fa6f03e2c48f6c825d1871c761040e3ebfbe8b79d3f9d21439073fcdedefb929",
+      "url": "https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/Gabio-macOS-1.6.1-arm64.zip"
     },
     "macX64": {
-      "name": "Gabio-macOS-1.6.0-x64.zip",
-      "size": 247034607,
-      "sha256": "184aae6794ad786a826c4dadfba22fa914c58a24e1b9db7d1ab2374f9c226048",
-      "url": "https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-macOS-1.6.0-x64.zip"
+      "name": "Gabio-macOS-1.6.1-x64.zip",
+      "size": 247673555,
+      "sha256": "31c8c6704acc9e524f693dc9bf80952875e00ca8fce1f7e7a142b002d0b1a613",
+      "url": "https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/Gabio-macOS-1.6.1-x64.zip"
     }
   }
 }
