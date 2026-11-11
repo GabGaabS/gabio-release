@@ -30,7 +30,7 @@ The same IPA supports both iPhone and iPad, starting with iOS/iPadOS 17.0.
 | Platform | Download | Installation |
 | --- | --- | --- |
 | Windows | [Latest stable release](https://github.com/GabGaabS/gabio-release/releases/latest): `Gabio-Setup-…exe` | Run the installer. Install updates over your existing app. The installer is currently unsigned. |
-| Android | **2.5.0 (code 37)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.0/Gabio-Android-2.5.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.0/Gabio-Android-2.5.0-universal.apk) | Allow installation from your chosen browser, then install over Gabio. The existing signing certificate is retained. |
+| Android | **2.5.1 (code 38)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-universal.apk) | Allow installation from your chosen browser, then install over Gabio. Android 13 minimum; a new production key and the official update signing lineage. |
 | iPhone / iPad | [IPA 1.6.0, build 15](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-iOS-1.6.0-unsigned.ipa) | [AltStore guide](#install-on-iphone-or-ipad); personal signing is required. |
 | Apple Silicon Mac | [1.6.0 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-macOS-1.6.0-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 | Intel Mac | [1.6.0 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-macOS-1.6.0-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
@@ -46,7 +46,7 @@ files are retained. Audio and subtitle languages have separate settings;
 catalogue titles, descriptions and track names keep the text provided by
 their source.
 
-**Android 2.5.0** also supports both languages. Open **Profil → Langue de
+**Android 2.5.1** also supports both languages. Open **Profil → Langue de
 Gabio → Français / English** and select English. The English path is **Profile
 → Gabio language**. The choice is retained after closing and updating the app.
 
@@ -128,19 +128,20 @@ French interface, captured using a test profile without personal data.
 
 ### First installation
 
-Android **8 or later** is required. Open the
-[Android 2.5.0 (code 37) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.5.0) on your phone/tablet.
-Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.0/Gabio-Android-2.5.0-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.0/Gabio-Android-2.5.0-universal.apk).
+Android **13 or later** is required for both APKs. Open the
+[Android 2.5.1 (code 38) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.5.1) on your phone/tablet.
+Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-universal.apk).
 
-1. Download the **ARM64 APK** for most recent phones. If it is incompatible or you are unsure, use the larger **universal APK**. The x86/x64 builds mainly serve emulators.
+1. Download the **ARM64 APK** for most recent phones. If its architecture is incompatible or you are unsure, use the larger **universal APK**. The x86/x64 builds mainly serve emulators.
 2. Open the APK from your browser’s downloads or a file manager.
 3. If Android asks, open **Settings → Allow from this source** for that browser/file manager, return to the APK and select **Install**. Labels vary between manufacturers. You can revoke this source permission afterwards.
 4. Open Gabio from your home screen.
 
 Android may warn about installing an unknown app or offer a Play Protect scan
 because the APK comes from outside Google Play. **Gabio’s APK is signed**, using
-the historical certificate retained for existing installations. It is not
-distributed or validated by Google Play. An Android warning should therefore
+a new production key since 2.5.1 and an official signing lineage for updating
+historical installations on Android 13 and later. It is not distributed or
+validated by Google Play. An Android warning should therefore
 not be described as the total absence of a signing certificate.
 [Install from another source](https://support.google.com/pixelphone/answer/7391672?hl=en),
 [Play Protect warning guidance](https://developers.google.com/android/play-protect/warning-dev-guidance).
@@ -151,7 +152,7 @@ diagnosis.
 
 ### First launch on Android
 
-With **Android 2.5.0 (code 37)**, a new installation offers the same initial
+With **Android 2.5.1 (code 38)**, a new installation offers the same initial
 steps as PC, once:
 
 1. Choose the **name** shown when you watch with friends, then select **Continue**.
@@ -202,10 +203,13 @@ French interface on an emulator, using a test profile without personal data.
 
 </details>
 
-Keep the same official channel and do not uninstall Gabio. Its historical
-certificate lets normal updates retain your data. For a signature conflict or
-“App not installed”, check the APK’s origin and architecture, then report the
-message before deleting any data.
+Keep the same official channel and do not uninstall Gabio. The official signing
+lineage connects the old and new signing identities to update the app without
+erasing data on Android 13 and later. The 2.5.0 → 2.5.1 update was verified on S24+
+without uninstalling, with library and resume entries visible. On Android 8–12,
+keep your current version: the 2.5.1 APKs require Android 13 or later. For a
+signature conflict or “App not installed”, check the Android version, official
+APK origin and architecture, then report the message before deleting any data.
 
 ## Install on iPhone or iPad
 
@@ -434,7 +438,7 @@ Gabio 0.1.0, French interface on the Mac used to build and test the app.
 | Platform | Possible alert and reason | What to check |
 | --- | --- | --- |
 | Windows | Unknown publisher / SmartScreen reputation: no Windows signing certificate. | Official origin and checksum; allow this file only if that option is offered. |
-| Android | Unknown source / Play Protect scan: installed outside Google Play, with the historical certificate still present. | APK architecture, version and origin; permission for your chosen browser. |
+| Android | Unknown source / Play Protect scan: installed outside Google Play, with a production key and the official update signing lineage. | APK architecture, version and origin; permission for your chosen browser. |
 | iPhone/iPad | Untrusted personal profile, Developer Mode disabled, missing AltServer or expired signature. | Profile, Developer Mode, AltServer connection and **Refresh All** within seven days. |
 | Mac | Unidentified developer: ad hoc signature, no Developer ID/notarization. | Correct ZIP architecture and checksum, then the local **Open Anyway** exception. |
 
