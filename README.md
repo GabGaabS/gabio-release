@@ -19,21 +19,21 @@ Apple et Android sont des préversions. Les sources de l’application restent p
 
 ## Dernière version iPhone / iPad
 
-**Gabio 1.6.0 — build 15** :
-[télécharger le dernier IPA universel Gabio-iOS-1.6.0-unsigned.ipa](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-iOS-1.6.0-unsigned.ipa).
+**Gabio 1.6.1 — build 16** :
+[télécharger le dernier IPA universel Gabio-iOS-1.6.1-unsigned.ipa](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/Gabio-iOS-1.6.1-unsigned.ipa).
 Un seul IPA convient à l’iPhone et à l’iPad, à partir d’iOS/iPadOS 17.0.
 
 [Ajouter Gabio dans AltStore Classic](https://altstore.io/source/raw.githubusercontent.com/GabGaabS/gabio-release/main/altstore/gabio.json?app=io.gabio.apple) ·
-[Voir les notes de la bêta Apple](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.6.0) ·
-[Empreintes SHA-256](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/SHA256SUMS-Apple.txt)
+[Voir les notes de la bêta Apple](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.6.1) ·
+[Empreintes SHA-256](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/SHA256SUMS-Apple.txt)
 
 | Plateforme | Téléchargement | Installation |
 | --- | --- | --- |
 | Windows | [Dernière version stable](https://github.com/GabGaabS/gabio-release/releases/latest) : fichier `Gabio-Setup-…exe` | Ouvrir l’installateur ; conserver l’installation existante pour une mise à jour. Installateur actuellement non signé. |
 | Android | **2.5.1 (code 38)** : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-universal.apk) | Autoriser l’installation depuis le navigateur utilisé, puis installer par-dessus Gabio. Android 13 minimum ; nouvelle clé de production et lignée officielle de mise à jour. |
-| iPhone / iPad | [IPA 1.6.0, build 15](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-iOS-1.6.0-unsigned.ipa) | [Guide AltStore](#installer-sur-iphone-ou-ipad) ; signature personnelle nécessaire. |
-| Mac Apple Silicon | [ZIP 1.6.0 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-macOS-1.6.0-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
-| Mac Intel | [ZIP 1.6.0 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-macOS-1.6.0-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
+| iPhone / iPad | [IPA 1.6.1, build 16](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/Gabio-iOS-1.6.1-unsigned.ipa) | [Guide AltStore](#installer-sur-iphone-ou-ipad) ; signature personnelle nécessaire. |
+| Mac Apple Silicon | [ZIP 1.6.1 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/Gabio-macOS-1.6.1-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
+| Mac Intel | [ZIP 1.6.1 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/Gabio-macOS-1.6.1-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 
 ## Choisir Français ou English
 
@@ -50,12 +50,12 @@ par les catalogues ne sont pas traduits par ce réglage.
 de Gabio → Français / English**. En anglais, le chemin est **Profile → Gabio
 language**. Le choix reste enregistré après fermeture et mise à jour.
 
-**Mac 1.6.0** propose Français / English : ouvrez **Paramètres → Langue de
+**Mac 1.6.1** propose Français / English : ouvrez **Paramètres → Langue de
 l’interface** (**Settings → Interface language** en anglais). Le choix reste
 enregistré après fermeture et mise à jour ; pendant la lecture, la vidéo,
 la position, les pistes, le volume et la calibration sont conservés.
 
-**iPhone/iPad 1.6.0/build15** propose Français / English dans **Profil → Langue de l’application**. Les titres des catalogues, langues audio et sous-titres restent distincts.
+**iPhone/iPad 1.6.1/build16** propose Français / English dans **Profil → Langue de l’application**. Les titres des catalogues, langues audio et sous-titres restent distincts.
 
 Pour rechercher une nouvelle version Apple dans Gabio : **Profil → Mises à jour → Rechercher une mise à jour** sur iPhone/iPad, ou **Paramètres → Mises à jour → Rechercher une mise à jour** sur Mac. Une version disponible propose **Ouvrir AltStore** sur mobile ou **Télécharger pour Mac** ; **Plus tard** ferme l’annonce. L’installation reste manuelle et conserve les données lorsque vous remplacez l’application existante.
 
@@ -244,7 +244,7 @@ d’ajout de cette source reste à confirmer sur appareil ; l’import manuel d�
 ci-dessous reste disponible.
 
 Utilisez **AltStore Classic** avec **AltServer** sur le PC. Un seul fichier
-`Gabio-iOS-1.6.0-unsigned.ipa` convient aux deux appareils. Aucun abonnement Apple payant n’est
+`Gabio-iOS-1.6.1-unsigned.ipa` convient aux deux appareils. Aucun abonnement Apple payant n’est
 nécessaire pour ce parcours personnel ; l’IPA téléchargé doit être signé par
 AltStore avant de pouvoir s’ouvrir.
 
@@ -288,7 +288,7 @@ Crédit : 9to5Mac, via la documentation AltStore.
 
 ### 3. Installer Gabio
 
-Téléchargez [**Gabio-iOS-1.6.0-unsigned.ipa**](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-iOS-1.6.0-unsigned.ipa),
+Téléchargez [**Gabio-iOS-1.6.1-unsigned.ipa**](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/Gabio-iOS-1.6.1-unsigned.ipa),
 depuis Safari sur l’appareil. Conservez-le dans Fichiers.
 
 Ouvrez AltStore Classic → **My Apps → +** en haut à gauche, puis choisissez cet
@@ -352,9 +352,9 @@ les téléchargements en gardant l'app ouverte.
 
 ## Installer sur Mac
 
-**Gabio Mac 1.6.0 — préversion** : [notes de version](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.6.0) ·
-[empreintes SHA-256 des deux ZIP](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/SHA256SUMS-Apple.txt).
-Cette préversion Apple regroupe l’IPA iPhone/iPad 1.6.0/build15 et les deux ZIP Mac 1.6.0 retenus. La publication Mac indépendante macos-v1.1.0 déjà disponible reste conservée.
+**Gabio Mac 1.6.1 — préversion** : [notes de version](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.6.1) ·
+[empreintes SHA-256 des deux ZIP](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/SHA256SUMS-Apple.txt).
+Cette préversion Apple regroupe l’IPA iPhone/iPad 1.6.1/build16 et les deux ZIP Mac 1.6.1 retenus. La publication Mac indépendante macos-v1.1.0 déjà disponible reste conservée.
 
 Vérifiez le nom du ZIP et son empreinte SHA-256 avant l’ouverture :
 
@@ -364,8 +364,8 @@ Vérifiez le nom du ZIP et son empreinte SHA-256 avant l’ouverture :
 
 Dans **menu Apple  → À propos de ce Mac**, regardez le processeur :
 
-- Une **puce Apple M1, M2, M3, M4…** : [Gabio 1.6.0 Apple Silicon / ARM64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-macOS-1.6.0-arm64.zip).
-- Un **processeur Intel** : [Gabio 1.6.0 Intel / x64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/Gabio-macOS-1.6.0-x64.zip).
+- Une **puce Apple M1, M2, M3, M4…** : [Gabio 1.6.1 Apple Silicon / ARM64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/Gabio-macOS-1.6.1-arm64.zip).
+- Un **processeur Intel** : [Gabio 1.6.1 Intel / x64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/Gabio-macOS-1.6.1-x64.zip).
 
 macOS **13 minimum**. Les ZIP Mac contiennent l’application Mac ; l’IPA sert
 uniquement aux iPhone et iPad. AltStore et un compte Apple ne sont pas nécessaires
@@ -392,7 +392,7 @@ concerne cette application. [Procédure officielle Apple](https://support.apple.
 </details>
 
 Si le message indique une archive/app endommagée, téléchargez de nouveau le ZIP
-et comparez son empreinte avec [SHA256SUMS-Apple.txt](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.0/SHA256SUMS-Apple.txt). Conservez le
+et comparez son empreinte avec [SHA256SUMS-Apple.txt](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/SHA256SUMS-Apple.txt). Conservez le
 message exact si le problème persiste ; ne modifiez pas les protections globales
 de macOS pour installer Gabio.
 
@@ -403,7 +403,7 @@ téléchargez le nouveau ZIP de votre architecture, quittez Gabio, extrayez-le
 puis remplacez seulement **Gabio.app** dans Applications. Gardez vos données
 Gabio et vos fichiers conservés ; leur suppression n’est pas nécessaire.
 
-Le canal Apple indique la dernière version disponible. Mac compare la version : une installation plus ancienne peut proposer 1.6.0, puis indique à jour pour cette même version. L’installation reste manuelle ; utilisez le ZIP de votre architecture.
+Le canal Apple indique la dernière version disponible. Mac compare la version : une installation plus ancienne peut proposer 1.6.1, puis indique à jour pour cette même version. L’installation reste manuelle ; utilisez le ZIP de votre architecture.
 
 ### 4. Démarrer
 
@@ -422,7 +422,7 @@ de vos addons**, choisissez son catalogue, complétez les critères obligatoires
 puis cliquez sur **Afficher le catalogue**. **Afficher plus** charge la suite
 lorsque le fournisseur propose plusieurs pages.
 
-Mac 1.6.0 prend en compte les catalogues de films, séries et anime compatibles,
+Mac 1.6.1 prend en compte les catalogues de films, séries et anime compatibles,
 leurs filtres et recherches, les fiches et épisodes utilisant les identifiants
 propres à l’addon, ainsi que les sources et sous-titres qu’il fournit. Les pistes
 intégrées au fichier restent accessibles dans le lecteur. Quand un addon renvoie
@@ -467,8 +467,11 @@ modifié demandent un examen distinct d’une simple alerte de réputation.
 
 ## Vérification et limites de la bêta Apple
 
-Les preuves des versions précédentes ci-dessous restent historiques. Elles ne qualifient pas automatiquement Apple 1.6.0/build15 ; les contrôles de cette version et leurs limites figurent dans [ses notes](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.6.0).
+Les preuves des versions précédentes ci-dessous restent historiques. Elles ne qualifient pas automatiquement Apple 1.6.1/build16 ; les contrôles de cette version et leurs limites figurent dans [ses notes](https://github.com/GabGaabS/gabio-release/releases/tag/apple-v1.6.1).
 
+Apple 1.6.1 est compilé et inspecté localement avec les SDK Apple
+officiels. Les nouveaux exécutables Mac n'ont pas été lancés sous macOS, et aucun
+nouvel essai physique iPhone/iPad n'est revendiqué. Les contrôles restent privés.
 
 Les guides, Windows 4.1.0, Android 2.1.0 et Mac 1.1.0 conservent Français / English. iOS 1.1.0/build9 a reçu une acceptation manuelle limitée sur l’iPad de test le 2026-10-17 : mise à jour avec données conservées, Cinemeta New / Afficher les titres et seules les actions du lecteur réellement détaillées dans les notes de version. Les suites automatisées complètes iPhone/iPad ne sont pas qualifiées pour ce build. Aucun essai physique supplémentaire sur iPhone n’en est déduit.
 
@@ -491,6 +494,5 @@ Les limites sont détaillées dans les [notes Mac 1.1.0](https://github.com/GabG
 et leurs licences accompagnent les applications.
 
 Téléchargez depuis ce dépôt public et comparez les
-[empreintes SHA-256 Mac 1.1.0](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/SHA256SUMS-Apple.txt) ou les
-[empreintes SHA-256 iOS 1.1.0](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.1.0/SHA256SUMS-Apple.txt).
+[empreintes SHA-256 Apple 1.6.1](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.1/SHA256SUMS-Apple.txt).
 Windows et Android conservent leurs canaux séparés et Windows reste la release Latest globale. Le canal Apple et la source AltStore décrivent seulement cette préversion Apple vérifiée. Ce dépôt public contient les binaires, guides et métadonnées de téléchargement, sans sources applicatives, données ni diagnostics utilisateur.
