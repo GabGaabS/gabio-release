@@ -30,7 +30,7 @@ Un seul IPA convient à l’iPhone et à l’iPad, à partir d’iOS/iPadOS 17.0
 | Plateforme | Téléchargement | Installation |
 | --- | --- | --- |
 | Windows | [Dernière version stable](https://github.com/GabGaabS/gabio-release/releases/latest) : fichier `Gabio-Setup-…exe` | Ouvrir l’installateur ; conserver l’installation existante pour une mise à jour. Installateur actuellement non signé. |
-| Android | **2.5.1 (code 38)** : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-universal.apk) | Autoriser l’installation depuis le navigateur utilisé, puis installer par-dessus Gabio. Android 13 minimum ; nouvelle clé de production et lignée officielle de mise à jour. |
+| Android | **2.5.2 (code 39)** : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.2/Gabio-Android-2.5.2-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.2/Gabio-Android-2.5.2-universal.apk) | Autoriser l’installation depuis le navigateur utilisé, puis installer par-dessus Gabio. Android 13 minimum ; nouvelle clé de production et lignée officielle de mise à jour. |
 | iPhone / iPad | [IPA 1.6.2, build 17](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.2/Gabio-iOS-1.6.2-unsigned.ipa) | [Guide AltStore](#installer-sur-iphone-ou-ipad) ; signature personnelle nécessaire. |
 | Mac Apple Silicon | [ZIP 1.6.2 ARM64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.2/Gabio-macOS-1.6.2-arm64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
 | Mac Intel | [ZIP 1.6.2 Intel/x64](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.2/Gabio-macOS-1.6.2-x64.zip) | [Guide Mac](#installer-sur-mac), macOS 13 minimum. |
@@ -46,7 +46,7 @@ addons et fichiers conservés restent disponibles ; les langues audio et
 sous-titres se règlent séparément. Les titres, résumés et noms de pistes fournis
 par les catalogues ne sont pas traduits par ce réglage.
 
-**Android 2.5.1** propose aussi les deux langues : ouvrez **Profil → Langue
+**Android 2.5.2** propose aussi les deux langues : ouvrez **Profil → Langue
 de Gabio → Français / English**. En anglais, le chemin est **Profile → Gabio
 language**. Le choix reste enregistré après fermeture et mise à jour.
 
@@ -129,8 +129,8 @@ Interface française, capturée avec un profil de test sans données personnelle
 ### Première installation
 
 Android **13 minimum** pour les deux APK. Sur le téléphone/tablette, ouvrez la
-[préversion Android 2.5.1 (code 38)](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.5.1).
-Téléchargements directs : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-universal.apk).
+[préversion Android 2.5.2 (code 39)](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.5.2).
+Téléchargements directs : [APK ARM64](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.2/Gabio-Android-2.5.2-arm64-v8a.apk) · [APK universal](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.2/Gabio-Android-2.5.2-universal.apk).
 
 1. Téléchargez l’APK **ARM64** pour la plupart des téléphones récents. Si son architecture n’est pas compatible ou si vous hésitez, prenez l’APK **universal**, plus volumineux. Les APK x86/x64 servent principalement aux émulateurs.
 2. Ouvrez le fichier depuis les téléchargements du navigateur ou le gestionnaire de fichiers.
@@ -152,7 +152,7 @@ les protections de l’appareil pour contourner un diagnostic inconnu.
 
 ### Premier lancement sur Android
 
-Avec **Android 2.5.1 (code 38)**, une installation neuve propose une seule fois
+Avec **Android 2.5.2 (code 39)**, une installation neuve propose une seule fois
 les mêmes premières étapes que sur PC :
 
 1. Choisissez le **nom** affiché dans vos séances entre amis, puis **Continuer**.
@@ -209,7 +209,7 @@ Gardez le même canal officiel et ne désinstallez pas Gabio : la lignée offici
 relie l’ancienne et la nouvelle signature pour mettre à jour l’app sans effacer les
 données sur Android 13 et ultérieur. La transition 2.5.0 → 2.5.1 a été vérifiée sur
 S24+ sans désinstallation, avec bibliothèque et reprise visibles. Sur Android 8 à
-12, conservez votre version actuelle : les APK 2.5.1 exigent Android 13 minimum.
+12, conservez votre version actuelle : les APK 2.5.2 exigent Android 13 minimum.
 En cas de conflit de signature ou « app non installée », vérifiez la version
 Android, l’origine officielle et l’architecture de l’APK ; signalez le message
 avant toute suppression de données.

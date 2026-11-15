@@ -30,7 +30,7 @@ The same IPA supports both iPhone and iPad, starting with iOS/iPadOS 17.0.
 | Platform | Download | Installation |
 | --- | --- | --- |
 | Windows | [Latest stable release](https://github.com/GabGaabS/gabio-release/releases/latest): `Gabio-Setup-…exe` | Run the installer. Install updates over your existing app. The installer is currently unsigned. |
-| Android | **2.5.1 (code 38)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-universal.apk) | Allow installation from your chosen browser, then install over Gabio. Android 13 minimum; a new production key and the official update signing lineage. |
+| Android | **2.5.2 (code 39)**: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.2/Gabio-Android-2.5.2-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.2/Gabio-Android-2.5.2-universal.apk) | Allow installation from your chosen browser, then install over Gabio. Android 13 minimum; a new production key and the official update signing lineage. |
 | iPhone / iPad | [IPA 1.6.2, build 17](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.2/Gabio-iOS-1.6.2-unsigned.ipa) | [AltStore guide](#install-on-iphone-or-ipad); personal signing is required. |
 | Apple Silicon Mac | [1.6.2 ARM64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.2/Gabio-macOS-1.6.2-arm64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
 | Intel Mac | [1.6.2 Intel/x64 ZIP](https://github.com/GabGaabS/gabio-release/releases/download/apple-v1.6.2/Gabio-macOS-1.6.2-x64.zip) | [Mac guide](#install-on-mac), macOS 13 or later. |
@@ -46,7 +46,7 @@ files are retained. Audio and subtitle languages have separate settings;
 catalogue titles, descriptions and track names keep the text provided by
 their source.
 
-**Android 2.5.1** also supports both languages. Open **Profil → Langue de
+**Android 2.5.2** also supports both languages. Open **Profil → Langue de
 Gabio → Français / English** and select English. The English path is **Profile
 → Gabio language**. The choice is retained after closing and updating the app.
 
@@ -129,8 +129,8 @@ French interface, captured using a test profile without personal data.
 ### First installation
 
 Android **13 or later** is required for both APKs. Open the
-[Android 2.5.1 (code 38) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.5.1) on your phone/tablet.
-Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.1/Gabio-Android-2.5.1-universal.apk).
+[Android 2.5.2 (code 39) prerelease](https://github.com/GabGaabS/gabio-release/releases/tag/android-v2.5.2) on your phone/tablet.
+Direct downloads: [ARM64 APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.2/Gabio-Android-2.5.2-arm64-v8a.apk) · [Universal APK](https://github.com/GabGaabS/gabio-release/releases/download/android-v2.5.2/Gabio-Android-2.5.2-universal.apk).
 
 1. Download the **ARM64 APK** for most recent phones. If its architecture is incompatible or you are unsure, use the larger **universal APK**. The x86/x64 builds mainly serve emulators.
 2. Open the APK from your browser’s downloads or a file manager.
@@ -152,7 +152,7 @@ diagnosis.
 
 ### First launch on Android
 
-With **Android 2.5.1 (code 38)**, a new installation offers the same initial
+With **Android 2.5.2 (code 39)**, a new installation offers the same initial
 steps as PC, once:
 
 1. Choose the **name** shown when you watch with friends, then select **Continue**.
@@ -207,7 +207,7 @@ Keep the same official channel and do not uninstall Gabio. The official signing
 lineage connects the old and new signing identities to update the app without
 erasing data on Android 13 and later. The 2.5.0 → 2.5.1 update was verified on S24+
 without uninstalling, with library and resume entries visible. On Android 8–12,
-keep your current version: the 2.5.1 APKs require Android 13 or later. For a
+keep your current version: the 2.5.2 APKs require Android 13 or later. For a
 signature conflict or “App not installed”, check the Android version, official
 APK origin and architecture, then report the message before deleting any data.
 
