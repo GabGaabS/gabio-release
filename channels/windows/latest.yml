@@ -1,13 +1,13 @@
 {
-  "version": "4.7.2",
+  "version": "4.7.3",
   "files": [
     {
-      "url": "https://github.com/GabGaabS/gabio-release/releases/download/v4.7.2/Gabio-Setup-4.7.2.exe",
-      "sha512": "EpvqvaxVdHePDLDBnq2VOsf2q8e0hocZmLBB4AN7GKYzgGVkfcZrBn2FDXN+Ocqad6SciBDYCxIU63IZ2RUJhQ==",
-      "size": 214690171
+      "url": "https://github.com/GabGaabS/gabio-release/releases/download/v4.7.3/Gabio-Setup-4.7.3.exe",
+      "sha512": "p7jTtuDLs9lLwaqKkaLIXRwwiaTMlPlVf+FM7JVi6UEP1orjcYARMVhjOr5HKUzMU9ORZgXJjX50amMpVbFQfA==",
+      "size": 214606793
     }
   ],
-  "path": "https://github.com/GabGaabS/gabio-release/releases/download/v4.7.2/Gabio-Setup-4.7.2.exe",
-  "sha512": "EpvqvaxVdHePDLDBnq2VOsf2q8e0hocZmLBB4AN7GKYzgGVkfcZrBn2FDXN+Ocqad6SciBDYCxIU63IZ2RUJhQ==",
-  "releaseDate": "2026-11-11T01:18:07.396Z"
+  "path": "https://github.com/GabGaabS/gabio-release/releases/download/v4.7.3/Gabio-Setup-4.7.3.exe",
+  "sha512": "p7jTtuDLs9lLwaqKkaLIXRwwiaTMlPlVf+FM7JVi6UEP1orjcYARMVhjOr5HKUzMU9ORZgXJjX50amMpVbFQfA==",
+  "releaseDate": "2026-11-15T13:49:27.801Z"
 }
